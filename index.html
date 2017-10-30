@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Webmap EPI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/OpenLayers/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ol_custom.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/dc.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ol3-ext.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ol3-sidebar_custom.css" rel="stylesheet" type="text/css"/>
+        <link href="css/sumoselect.css" rel="stylesheet" type="text/css"/>
+        <link href="css/nouislider.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.minicolors.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-changes.css" rel="stylesheet" type="text/css"/>
+        <link href="css/site.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>	
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div style="padding-left:0px">
+                            <h2 id="inAppTitle" hidden>TITLE - Subtitle</h2>
+                        </div>
+                        <div id="inAppDisclaimerRow" class="row" style="float:right;color:#d12121" hidden>
+                            <div id="inAppDisclaimer"></div>
+                            <br>
+                        </div>
+                            <div>	
+                                <div class="row" style="padding:0px;">
+                                    <div class="col-md-4" style="padding:0px;">
+                                        <div id="container" hidden>
+                                            <br>
+                                                <div class="row" style="float:right" hidden>
+                                                    <div class="col-md-12" >
+                                                        <div id="data-count"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12" >
+                                                        <div id="analysisSectionTitle" class="row" style="padding-left:15px;" hidden>
+                                                            <strong>Analysis title</strong>
+                                                        </div>
+                                                        <div class="row" style="padding-left:15px;">
+                                                            <span id="analysisDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Analysis description</span>
+                                                        </div>												
+                                                        <br>
+                                                        <div class="row" style="padding-left:15px;">
+                                                            <select id="selectorAnalysis"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-12" >
+                                                        <div id="dimensionTitle" class="row" style="padding-left:15px;" hidden>
+                                                            <strong>Dimension title</strong>																				
+                                                        </div>
+                                                        <div class="row" style="padding-left:15px;">
+                                                            <span id="dimensionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Dimension description</span>
+                                                            <br>
+                                                            <br>
+                                                        </div>
+                                                        <div class="row" style="padding-left:15px;">											
+                                                            <span id="selectWeek_value" class="noselect" style="float:right;font-size:9pt;color:rgba(120,120,120,1);font-weight:700;"></span>				
+                                                        </div>
+                                                        <br>
+                                                        <div class="row" style="padding-left:15px;">
+                                                            <div id="pieChartAnchor" class="chartAnchor"></div>								
+                                                            <div class="col-md-1">
+                                                                <span><i class="fa fa-arrow-circle-left slider_move" data-slider="selectWeek"></i></span>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <div id="selectWeek"></div>
+                                                            </div>
+                                                            <div class="col-md-1">
+                                                                <span><i class="fa fa-arrow-circle-right slider_move" data-slider="selectWeek"></i></span>
+                                                            </div>                                                               
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </div>															
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12" >
+                                                        <div id="selectionTitle" class="row" style="padding-left:15px;" hidden>
+                                                            <strong>Feature selection</strong>
+                                                        </div>
+                                                        <div class="row" style="padding-left:15px;">
+                                                            <span id="selectionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Selection description</span>
+                                                        </div>										
+                                                        <br>
+                                                        <div class="row" style="padding-left:0px;">
+                                                            <div class="col-md-8">
+                                                                <select id="selectorAdmin"></select>											
+                                                            </div>
+                                                            <div class="col-md-4" style="padding-left:15px;float:right;">
+                                                                <div id="infoAdmin"></div>													
+                                                            </div>										
+                                                        </div>										
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>	
+                                    <div id="map_container" class="col-md-6" style="height:inherit;padding-left:0px;">
+                                        <div id="map">
+                                            <div id="popup" class="ol-popup">
+                                                <span style="float:right;padding-top:5px;"><i class="fa fa-window-close noselect popupClose"></i></span>
+                                                <div id="popup-content"></div>
+                                            </div>
+                                        </div>
+                                        <div id="toggleSettings" class="noselect" hidden></div>
+                                        <br>							
+                                    </div>
+                                    <div id="sideLegend" class="col-md-2" hidden>
+                                        <span class="noselect" style="font-size:14pt;font-weight:700;float:center;color:#d12121">Legend</span>
+                                        <div id="legendContent"></div>	
+                                    </div>
+                                    <div id="forExport" class="col-md-2" style="float:left; top:10px;" hidden>
+                                        <button id="export-pdf" class="btn btn-default">Export PDF</button>							
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div id="mapSettings" class="row" >
+                                    <div class="col-md-4"></div>
+                                    <div id="settingsContainer" class="col-md-6" hidden></div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                    <div id="adminRow" class="row" hidden>
+                                        <br>
+                                            <!-- <div class="row"> -->
+                                                    <!-- <div class="col-md-4" style="padding-left:45px"> -->
+                                                            <!-- <span id="graphOptions"><i class="fa fa-gear"></i></span> -->
+                                                            <!-- <br> -->
+                                                    <!-- </div>							 -->
+                                            <!-- </div> -->
+                                            <div class="row">
+                                                    <div id="weeklyChart_AR" class="col-md-4">								
+                                                            <div class="col-md-12">
+                                                                    <div id="weeklyChartTitle_AR" class="row" style="padding-left:15px;">
+                                                                            <strong>Title</strong>
+                                                                    </div>
+                                                                    <div class="row" style="padding-left:15px;">
+                                                                            <div id="geoSAnchorCumulative" class="chartAnchor"></div>
+                                                                    </div>
+                                                            </div>								
+                                                    </div>								
+                                                    <div id="weeklyChart" class="col-md-4">								
+                                                            <div class="col-md-12">
+                                                                    <div id="weeklyChartTitle" class="row" style="padding-left:15px;">
+                                                                            <strong>Title</strong>
+                                                                    </div>
+                                                                    <div class="row" style="padding-left:15px;">
+                                                                            <div id="geoSAnchorCombined" class="chartAnchor"></div>
+                                                                    </div>
+                                                            </div>								
+                                                    </div>
+                                                    <div id="weeklyChart_WIR" class="col-md-4">								
+                                                            <div class="col-md-12">
+                                                                    <div id="weeklyChartTitle_WIR" class="row" style="padding-left:15px;">
+                                                                            <strong>Title</strong>
+                                                                    </div>
+                                                                    <div class="row" style="padding-left:15px;">
+                                                                            <div id="geoSAnchorMeasure" class="chartAnchor"></div>
+                                                                    </div>
+                                                            </div>								
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <div id="overallRow" class="row">
+                                        <br>
+                                            <div class="col-md-4">
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <div class="col-md-12">
+                                                            <div class="row" style="padding-left:15px;">
+                                                                    <strong>Overall - Cases</strong>
+                                                            </div>
+                                                            <div class="row" style="padding-left:15px;">
+                                                                    <div id="geoAllAnchorCombined" class="chartAnchor"></div>
+                                                            </div>
+                                                    </div>								
+                                            </div>
+                                            <div class="col-md-4">
+                                            </div>								
+                                    </div>							
+                            </div>
+                    </div>				
+            </div>	
+    </div>
+</div>
+	</div>
+	<div class="modal fade" style="opacity:1;background-color:white;" id="modalTable" role="dialog"  tabindex="-1">
+	  <div id="modal-dialog-table" class="modal-dialog">
+		  <div id="modal-body-table">
+                      <div class="row"><div class="col-md-12" style="text-align:center"><h2>Getting your document ready...</h2></div></div>
+                  </div>				  
+	  </div>
+	</div>
+        <div id="pxMmTest" style="height:1mm;display:none"></div>
+    </body>
+    <!--<script src="js/config_cod.js" type="text/javascript"></script>-->
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/nouislider.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sumoselect.min.js" type="text/javascript"></script>
+    <script src="js/jquery.minicolors.min.js" type="text/javascript"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="dist/OpenLayers/v4.4.1-dist/ol-debug.js" type="text/javascript"></script>
+    <!--<script src="js/ol_custom.js" type="text/javascript"></script>-->
+    <script src="js/moment.js" type="text/javascript"></script>
+    <script src="js/jspdf.min.js" type="text/javascript"></script>
+    <!--script src="js/html2canvas.js" type="text/javascript"></script-->
+    <script src="js/canvg.min.js" type="text/javascript"></script>
+    <script src="js/ol3-sidebar.js" type="text/javascript"></script>
+    <script src="js/ol3-ext.js" type="text/javascript"></script>
+    <script src="js/d3.v3.min.js" type="text/javascript"></script>
+    <script src="js/crossfilter.js" type="text/javascript"></script>
+    <script src="js/dc.js" type="text/javascript"></script>
+    <script src="dist/CartONG_OL3_basemaps/CartONG_OL3_basemaps.js" type="text/javascript"></script>
+    <script src="js/wNumb.js" type="text/javascript"></script>
+    <!--<script src="js/custom.js" type="text/javascript"></script>-->
+    <script src="js/init.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/testFunctions.js" type="text/javascript"></script> 
+    <script src="js/exportPdf.js" type="text/javascript"></script>    
+    <script src="js/yemcholera.js" type="text/javascript"></script>
+
+    
+</html>
