@@ -1,0 +1,911 @@
+District,Week,Cases_inf5y,Cases_sup5y,Total_cases,Cumulative_cases,WIR_x10000,AR_x10000,Adm2_code
+Abs,1,0,0,0,0,0,0,YE1704
+Abs,2,0,0,0,0,0,0,YE1704
+Abs,3,0,0,0,0,0,0,YE1704
+Abs,4,0,0,0,0,0,0,YE1704
+Abs,5,0,0,0,0,0,0,YE1704
+Abs,6,0,0,0,0,0,0,YE1704
+Abs,7,0,0,0,0,0,0,YE1704
+Abs,8,0,0,0,0,0,0,YE1704
+Abs,9,0,0,0,0,0,0,YE1704
+Abs,10,0,0,0,0,0,0,YE1704
+Abs,11,0,0,0,0,0,0,YE1704
+Abs,12,0,0,0,0,0,0,YE1704
+Abs,13,0,0,0,0,0,0,YE1704
+Abs,14,0,1,1,1,0.057,0.057,YE1704
+Abs,15,4,10,14,15,0.793,0.85,YE1704
+Abs,16,0,0,0,15,0,0.85,YE1704
+Abs,17,0,2,2,17,0.113,0.963,YE1704
+Abs,18,6,18,24,41,1.36,2.323,YE1704
+Abs,19,19,57,76,117,4.306,6.629,YE1704
+Abs,20,91,234,325,442,18.413,25.042,YE1704
+Abs,21,139,362,501,943,28.385,53.427,YE1704
+Abs,22,133,416,549,1492,31.104,84.531,YE1704
+Abs,23,136,421,557,2049,31.558,116.089,YE1704
+Abs,24,64,292,356,2405,20.17,136.258,YE1704
+Abs,25,51,296,347,2752,19.66,155.918,YE1704
+Abs,26,67,313,380,3132,21.529,177.447,YE1704
+Aflah Al Yaman,1,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,2,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,3,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,4,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,5,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,6,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,7,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,8,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,9,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,10,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,11,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,12,0,0,0,0,0,0,YE1714
+Aflah Al Yaman,13,0,19,19,19,3.807,3.807,YE1714
+Aflah Al Yaman,14,0,2,2,21,0.401,4.208,YE1714
+Aflah Al Yaman,15,1,2,3,24,0.601,4.809,YE1714
+Aflah Al Yaman,16,1,2,3,27,0.601,5.41,YE1714
+Aflah Al Yaman,17,3,13,16,43,3.206,8.616,YE1714
+Aflah Al Yaman,18,0,8,8,51,1.603,10.219,YE1714
+Aflah Al Yaman,19,3,14,17,68,3.406,13.626,YE1714
+Aflah Al Yaman,20,25,75,100,168,20.038,33.664,YE1714
+Aflah Al Yaman,21,8,38,46,214,9.218,42.881,YE1714
+Aflah Al Yaman,22,11,62,73,287,14.628,57.509,YE1714
+Aflah Al Yaman,23,10,55,65,352,13.025,70.534,YE1714
+Aflah Al Yaman,24,16,65,81,433,16.231,86.765,YE1714
+Aflah Al Yaman,25,20,61,81,514,16.231,102.996,YE1714
+Aflah Al Yaman,26,10,48,58,572,11.622,114.618,YE1714
+Aflah Ash Shawm,1,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,2,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,3,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,4,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,5,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,6,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,7,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,8,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,9,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,10,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,11,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,12,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,13,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,14,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,15,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,16,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,17,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,18,0,0,0,0,0,0,YE1710
+Aflah Ash Shawm,19,0,5,5,5,0.875,0.875,YE1710
+Aflah Ash Shawm,20,2,6,8,13,1.4,2.275,YE1710
+Aflah Ash Shawm,21,12,39,51,64,8.923,11.198,YE1710
+Aflah Ash Shawm,22,19,62,81,145,14.172,25.37,YE1710
+Aflah Ash Shawm,23,1,10,11,156,1.925,27.294,YE1710
+Aflah Ash Shawm,24,1,13,14,170,2.449,29.744,YE1710
+Aflah Ash Shawm,25,3,15,18,188,3.149,32.893,YE1710
+Aflah Ash Shawm,26,1,11,12,200,2.1,34.993,YE1710
+Al Jamimah ,1,0,0,0,0,0,0,YE1708
+Al Jamimah ,2,0,0,0,0,0,0,YE1708
+Al Jamimah ,3,0,0,0,0,0,0,YE1708
+Al Jamimah ,4,0,0,0,0,0,0,YE1708
+Al Jamimah ,5,0,0,0,0,0,0,YE1708
+Al Jamimah ,6,0,0,0,0,0,0,YE1708
+Al Jamimah ,7,0,0,0,0,0,0,YE1708
+Al Jamimah ,8,0,0,0,0,0,0,YE1708
+Al Jamimah ,9,0,0,0,0,0,0,YE1708
+Al Jamimah ,10,0,0,0,0,0,0,YE1708
+Al Jamimah ,11,0,0,0,0,0,0,YE1708
+Al Jamimah ,12,0,0,0,0,0,0,YE1708
+Al Jamimah ,13,0,0,0,0,0,0,YE1708
+Al Jamimah ,14,0,0,0,0,0,0,YE1708
+Al Jamimah ,15,0,0,0,0,0,0,YE1708
+Al Jamimah ,16,0,0,0,0,0,0,YE1708
+Al Jamimah ,17,0,0,0,0,0,0,YE1708
+Al Jamimah ,18,0,0,0,0,0,0,YE1708
+Al Jamimah ,19,0,0,0,0,0,0,YE1708
+Al Jamimah ,20,0,1,1,1,0.184,0.184,YE1708
+Al Jamimah ,21,2,7,9,10,1.655,1.839,YE1708
+Al Jamimah ,22,0,3,3,13,0.552,2.39,YE1708
+Al Jamimah ,23,1,2,3,16,0.552,2.942,YE1708
+Al Jamimah ,24,0,0,0,16,0,2.942,YE1708
+Al Jamimah ,25,1,1,2,18,0.368,3.31,YE1708
+Al Jamimah ,26,0,0,0,18,0,3.31,YE1708
+Al Maghrabah,1,0,0,0,0,0,0,YE1717
+Al Maghrabah,2,0,0,0,0,0,0,YE1717
+Al Maghrabah,3,0,0,0,0,0,0,YE1717
+Al Maghrabah,4,0,0,0,0,0,0,YE1717
+Al Maghrabah,5,0,0,0,0,0,0,YE1717
+Al Maghrabah,6,0,0,0,0,0,0,YE1717
+Al Maghrabah,7,0,0,0,0,0,0,YE1717
+Al Maghrabah,8,0,0,0,0,0,0,YE1717
+Al Maghrabah,9,0,0,0,0,0,0,YE1717
+Al Maghrabah,10,0,0,0,0,0,0,YE1717
+Al Maghrabah,11,0,0,0,0,0,0,YE1717
+Al Maghrabah,12,0,0,0,0,0,0,YE1717
+Al Maghrabah,13,0,0,0,0,0,0,YE1717
+Al Maghrabah,14,0,0,0,0,0,0,YE1717
+Al Maghrabah,15,0,0,0,0,0,0,YE1717
+Al Maghrabah,16,0,0,0,0,0,0,YE1717
+Al Maghrabah,17,0,0,0,0,0,0,YE1717
+Al Maghrabah,18,0,0,0,0,0,0,YE1717
+Al Maghrabah,19,0,0,0,0,0,0,YE1717
+Al Maghrabah,20,3,13,16,16,1.874,1.874,YE1717
+Al Maghrabah,21,8,26,34,50,3.983,5.858,YE1717
+Al Maghrabah,22,6,19,25,75,2.929,8.787,YE1717
+Al Maghrabah,23,3,18,21,96,2.46,11.247,YE1717
+Al Maghrabah,24,8,12,20,116,2.343,13.59,YE1717
+Al Maghrabah,25,14,45,59,175,6.912,20.502,YE1717
+Al Maghrabah,26,2,12,14,189,1.64,22.142,YE1717
+Al Mahabishah,1,0,0,0,0,0,0,YE1715
+Al Mahabishah,2,0,0,0,0,0,0,YE1715
+Al Mahabishah,3,0,0,0,0,0,0,YE1715
+Al Mahabishah,4,0,0,0,0,0,0,YE1715
+Al Mahabishah,5,0,0,0,0,0,0,YE1715
+Al Mahabishah,6,0,0,0,0,0,0,YE1715
+Al Mahabishah,7,0,0,0,0,0,0,YE1715
+Al Mahabishah,8,0,0,0,0,0,0,YE1715
+Al Mahabishah,9,0,0,0,0,0,0,YE1715
+Al Mahabishah,10,0,0,0,0,0,0,YE1715
+Al Mahabishah,11,0,0,0,0,0,0,YE1715
+Al Mahabishah,12,0,0,0,0,0,0,YE1715
+Al Mahabishah,13,0,0,0,0,0,0,YE1715
+Al Mahabishah,14,0,0,0,0,0,0,YE1715
+Al Mahabishah,15,0,0,0,0,0,0,YE1715
+Al Mahabishah,16,0,0,0,0,0,0,YE1715
+Al Mahabishah,17,0,0,0,0,0,0,YE1715
+Al Mahabishah,18,0,12,12,12,1.789,1.789,YE1715
+Al Mahabishah,19,1,1,2,14,0.298,2.087,YE1715
+Al Mahabishah,20,0,4,4,18,0.596,2.683,YE1715
+Al Mahabishah,21,0,4,4,22,0.596,3.279,YE1715
+Al Mahabishah,22,5,8,13,35,1.938,5.217,YE1715
+Al Mahabishah,23,2,16,18,53,2.683,7.9,YE1715
+Al Mahabishah,24,14,29,43,96,6.41,14.31,YE1715
+Al Mahabishah,25,16,90,106,202,15.801,30.111,YE1715
+Al Mahabishah,26,14,44,58,260,8.646,38.756,YE1715
+Al Miftah,1,0,0,0,0,0,0,YE1716
+Al Miftah,2,0,0,0,0,0,0,YE1716
+Al Miftah,3,0,0,0,0,0,0,YE1716
+Al Miftah,4,0,0,0,0,0,0,YE1716
+Al Miftah,5,0,0,0,0,0,0,YE1716
+Al Miftah,6,0,0,0,0,0,0,YE1716
+Al Miftah,7,0,0,0,0,0,0,YE1716
+Al Miftah,8,0,0,0,0,0,0,YE1716
+Al Miftah,9,0,0,0,0,0,0,YE1716
+Al Miftah,10,0,0,0,0,0,0,YE1716
+Al Miftah,11,0,0,0,0,0,0,YE1716
+Al Miftah,12,0,0,0,0,0,0,YE1716
+Al Miftah,13,0,0,0,0,0,0,YE1716
+Al Miftah,14,0,0,0,0,0,0,YE1716
+Al Miftah,15,0,0,0,0,0,0,YE1716
+Al Miftah,16,0,0,0,0,0,0,YE1716
+Al Miftah,17,0,0,0,0,0,0,YE1716
+Al Miftah,18,0,0,0,0,0,0,YE1716
+Al Miftah,19,0,0,0,0,0,0,YE1716
+Al Miftah,20,0,0,0,0,0,0,YE1716
+Al Miftah,21,0,0,0,0,0,0,YE1716
+Al Miftah,22,1,4,5,5,1.191,1.191,YE1716
+Al Miftah,23,0,0,0,5,0,1.191,YE1716
+Al Miftah,24,0,1,1,6,0.238,1.429,YE1716
+Al Miftah,25,0,0,0,6,0,1.429,YE1716
+Al Miftah,26,0,0,0,6,0,1.429,YE1716
+Ash Shaghadirah,1,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,2,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,3,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,4,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,5,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,6,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,7,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,8,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,9,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,10,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,11,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,12,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,13,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,14,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,15,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,16,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,17,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,18,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,19,0,0,0,0,0,0,YE1725
+Ash Shaghadirah,20,5,11,16,16,2.478,2.478,YE1725
+Ash Shaghadirah,21,7,21,28,44,4.336,6.814,YE1725
+Ash Shaghadirah,22,13,81,94,138,14.556,21.37,YE1725
+Ash Shaghadirah,23,26,73,99,237,15.331,36.7,YE1725
+Ash Shaghadirah,24,19,51,70,307,10.84,47.54,YE1725
+Ash Shaghadirah,25,17,63,80,387,12.388,59.928,YE1725
+Ash Shaghadirah,26,6,27,33,420,5.11,65.039,YE1725
+Ash Shahil ,1,0,0,0,0,0,0,YE1721
+Ash Shahil ,2,0,0,0,0,0,0,YE1721
+Ash Shahil ,3,0,0,0,0,0,0,YE1721
+Ash Shahil ,4,0,0,0,0,0,0,YE1721
+Ash Shahil ,5,0,0,0,0,0,0,YE1721
+Ash Shahil ,6,0,0,0,0,0,0,YE1721
+Ash Shahil ,7,0,0,0,0,0,0,YE1721
+Ash Shahil ,8,0,0,0,0,0,0,YE1721
+Ash Shahil ,9,0,0,0,0,0,0,YE1721
+Ash Shahil ,10,0,0,0,0,0,0,YE1721
+Ash Shahil ,11,0,0,0,0,0,0,YE1721
+Ash Shahil ,12,0,0,0,0,0,0,YE1721
+Ash Shahil ,13,0,0,0,0,0,0,YE1721
+Ash Shahil ,14,0,0,0,0,0,0,YE1721
+Ash Shahil ,15,0,0,0,0,0,0,YE1721
+Ash Shahil ,16,0,0,0,0,0,0,YE1721
+Ash Shahil ,17,0,0,0,0,0,0,YE1721
+Ash Shahil ,18,0,0,0,0,0,0,YE1721
+Ash Shahil ,19,0,1,1,1,0.232,0.232,YE1721
+Ash Shahil ,20,0,2,2,3,0.464,0.697,YE1721
+Ash Shahil ,21,0,3,3,6,0.697,1.393,YE1721
+Ash Shahil ,22,0,7,7,13,1.625,3.019,YE1721
+Ash Shahil ,23,0,17,17,30,3.947,6.966,YE1721
+Ash Shahil ,24,2,26,28,58,6.501,13.467,YE1721
+Ash Shahil ,25,4,26,30,88,6.966,20.433,YE1721
+Ash Shahil ,26,0,18,18,106,4.18,24.613,YE1721
+Aslem,1,0,0,0,0,0,0,YE1712
+Aslem,2,0,0,0,0,0,0,YE1712
+Aslem,3,0,0,0,0,0,0,YE1712
+Aslem,4,0,0,0,0,0,0,YE1712
+Aslem,5,0,0,0,0,0,0,YE1712
+Aslem,6,0,0,0,0,0,0,YE1712
+Aslem,7,0,0,0,0,0,0,YE1712
+Aslem,8,0,0,0,0,0,0,YE1712
+Aslem,9,0,0,0,0,0,0,YE1712
+Aslem,10,0,0,0,0,0,0,YE1712
+Aslem,11,0,0,0,0,0,0,YE1712
+Aslem,12,0,0,0,0,0,0,YE1712
+Aslem,13,0,0,0,0,0,0,YE1712
+Aslem,14,0,0,0,0,0,0,YE1712
+Aslem,15,0,2,2,2,0.307,0.307,YE1712
+Aslem,16,0,3,3,5,0.46,0.767,YE1712
+Aslem,17,0,6,6,11,0.921,1.688,YE1712
+Aslem,18,1,6,7,18,1.074,2.762,YE1712
+Aslem,19,13,42,55,73,8.439,11.201,YE1712
+Aslem,20,24,48,72,145,11.047,22.248,YE1712
+Aslem,21,38,125,163,308,25.01,47.257,YE1712
+Aslem,22,40,133,173,481,26.544,73.801,YE1712
+Aslem,23,50,159,209,690,32.068,105.869,YE1712
+Aslem,24,45,116,161,851,24.703,130.572,YE1712
+Aslem,25,20,123,143,994,21.941,152.512,YE1712
+Aslem,26,23,95,118,1112,18.105,170.618,YE1712
+Bakil Al Mir,1,0,0,0,0,0,0,YE1701
+Bakil Al Mir,2,0,0,0,0,0,0,YE1701
+Bakil Al Mir,3,0,0,0,0,0,0,YE1701
+Bakil Al Mir,4,0,0,0,0,0,0,YE1701
+Bakil Al Mir,5,0,0,0,0,0,0,YE1701
+Bakil Al Mir,6,0,0,0,0,0,0,YE1701
+Bakil Al Mir,7,0,0,0,0,0,0,YE1701
+Bakil Al Mir,8,0,0,0,0,0,0,YE1701
+Bakil Al Mir,9,0,0,0,0,0,0,YE1701
+Bakil Al Mir,10,0,0,0,0,0,0,YE1701
+Bakil Al Mir,11,0,0,0,0,0,0,YE1701
+Bakil Al Mir,12,0,0,0,0,0,0,YE1701
+Bakil Al Mir,13,0,0,0,0,0,0,YE1701
+Bakil Al Mir,14,0,0,0,0,0,0,YE1701
+Bakil Al Mir,15,0,0,0,0,0,0,YE1701
+Bakil Al Mir,16,0,0,0,0,0,0,YE1701
+Bakil Al Mir,17,0,0,0,0,0,0,YE1701
+Bakil Al Mir,18,0,0,0,0,0,0,YE1701
+Bakil Al Mir,19,0,0,0,0,0,0,YE1701
+Bakil Al Mir,20,0,1,1,1,0.348,0.348,YE1701
+Bakil Al Mir,21,0,2,2,3,0.696,1.044,YE1701
+Bakil Al Mir,22,0,0,0,3,0,1.044,YE1701
+Bakil Al Mir,23,0,3,3,6,1.044,2.087,YE1701
+Bakil Al Mir,24,3,1,4,10,1.391,3.479,YE1701
+Bakil Al Mir,25,2,0,2,12,0.696,4.174,YE1701
+Bakil Al Mir,26,0,0,0,12,0,4.174,YE1701
+Bani Al Awam,1,0,0,0,0,0,0,YE1727
+Bani Al Awam,2,0,0,0,0,0,0,YE1727
+Bani Al Awam,3,0,0,0,0,0,0,YE1727
+Bani Al Awam,4,0,0,0,0,0,0,YE1727
+Bani Al Awam,5,0,0,0,0,0,0,YE1727
+Bani Al Awam,6,0,0,0,0,0,0,YE1727
+Bani Al Awam,7,0,0,0,0,0,0,YE1727
+Bani Al Awam,8,0,0,0,0,0,0,YE1727
+Bani Al Awam,9,0,0,0,0,0,0,YE1727
+Bani Al Awam,10,0,0,0,0,0,0,YE1727
+Bani Al Awam,11,0,0,0,0,0,0,YE1727
+Bani Al Awam,12,0,0,0,0,0,0,YE1727
+Bani Al Awam,13,0,0,0,0,0,0,YE1727
+Bani Al Awam,14,0,0,0,0,0,0,YE1727
+Bani Al Awam,15,0,0,0,0,0,0,YE1727
+Bani Al Awam,16,0,0,0,0,0,0,YE1727
+Bani Al Awam,17,0,0,0,0,0,0,YE1727
+Bani Al Awam,18,0,0,0,0,0,0,YE1727
+Bani Al Awam,19,0,0,0,0,0,0,YE1727
+Bani Al Awam,20,0,5,5,5,0.723,0.723,YE1727
+Bani Al Awam,21,4,15,19,24,2.746,3.469,YE1727
+Bani Al Awam,22,5,5,10,34,1.445,4.914,YE1727
+Bani Al Awam,23,1,15,16,50,2.312,7.226,YE1727
+Bani Al Awam,24,4,14,18,68,2.601,9.828,YE1727
+Bani Al Awam,25,4,11,15,83,2.168,11.996,YE1727
+Bani Al Awam,26,2,4,6,89,0.867,12.863,YE1727
+Bani Qa'is ,1,0,0,0,0,0,0,YE1724
+Bani Qa'is ,2,0,0,0,0,0,0,YE1724
+Bani Qa'is ,3,0,0,0,0,0,0,YE1724
+Bani Qa'is ,4,0,0,0,0,0,0,YE1724
+Bani Qa'is ,5,0,0,0,0,0,0,YE1724
+Bani Qa'is ,6,0,0,0,0,0,0,YE1724
+Bani Qa'is ,7,0,0,0,0,0,0,YE1724
+Bani Qa'is ,8,0,0,0,0,0,0,YE1724
+Bani Qa'is ,9,0,0,0,0,0,0,YE1724
+Bani Qa'is ,10,0,0,0,0,0,0,YE1724
+Bani Qa'is ,11,0,0,0,0,0,0,YE1724
+Bani Qa'is ,12,0,0,0,0,0,0,YE1724
+Bani Qa'is ,13,0,0,0,0,0,0,YE1724
+Bani Qa'is ,14,0,0,0,0,0,0,YE1724
+Bani Qa'is ,15,0,0,0,0,0,0,YE1724
+Bani Qa'is ,16,0,0,0,0,0,0,YE1724
+Bani Qa'is ,17,0,0,0,0,0,0,YE1724
+Bani Qa'is ,18,0,0,0,0,0,0,YE1724
+Bani Qa'is ,19,0,1,1,1,0.139,0.139,YE1724
+Bani Qa'is ,20,5,15,20,21,2.787,2.927,YE1724
+Bani Qa'is ,21,11,51,62,83,8.64,11.567,YE1724
+Bani Qa'is ,22,23,56,79,162,11.009,22.576,YE1724
+Bani Qa'is ,23,13,67,80,242,11.149,33.724,YE1724
+Bani Qa'is ,24,13,58,71,313,9.894,43.619,YE1724
+Bani Qa'is ,25,21,53,74,387,10.312,53.931,YE1724
+Bani Qa'is ,26,9,42,51,438,7.107,61.038,YE1724
+Hajjah,1,0,0,0,0,0,0,YE1729
+Hajjah,2,0,0,0,0,0,0,YE1729
+Hajjah,3,0,0,0,0,0,0,YE1729
+Hajjah,4,0,0,0,0,0,0,YE1729
+Hajjah,5,0,0,0,0,0,0,YE1729
+Hajjah,6,0,0,0,0,0,0,YE1729
+Hajjah,7,0,0,0,0,0,0,YE1729
+Hajjah,8,0,0,0,0,0,0,YE1729
+Hajjah,9,0,0,0,0,0,0,YE1729
+Hajjah,10,0,0,0,0,0,0,YE1729
+Hajjah,11,0,0,0,0,0,0,YE1729
+Hajjah,12,0,0,0,0,0,0,YE1729
+Hajjah,13,0,0,0,0,0,0,YE1729
+Hajjah,14,0,0,0,0,0,0,YE1729
+Hajjah,15,0,0,0,0,0,0,YE1729
+Hajjah,16,0,0,0,0,0,0,YE1729
+Hajjah,17,0,0,0,0,0,0,YE1729
+Hajjah,18,0,0,0,0,0,0,YE1729
+Hajjah,19,0,0,0,0,0,0,YE1729
+Hajjah,20,1,4,5,5,1.278,1.278,YE1729
+Hajjah,21,4,10,14,19,3.577,4.855,YE1729
+Hajjah,22,9,41,50,69,12.777,17.632,YE1729
+Hajjah,23,9,43,52,121,13.288,30.919,YE1729
+Hajjah,24,22,50,72,193,18.398,49.318,YE1729
+Hajjah,25,14,31,45,238,11.499,60.817,YE1729
+Hajjah,26,3,20,23,261,5.877,66.694,YE1729
+Hajjah City,1,0,0,0,0,0,0,YE1728
+Hajjah City,2,0,0,0,0,0,0,YE1728
+Hajjah City,3,0,0,0,0,0,0,YE1728
+Hajjah City,4,0,0,0,0,0,0,YE1728
+Hajjah City,5,0,0,0,0,0,0,YE1728
+Hajjah City,6,0,0,0,0,0,0,YE1728
+Hajjah City,7,0,0,0,0,0,0,YE1728
+Hajjah City,8,0,0,0,0,0,0,YE1728
+Hajjah City,9,0,0,0,0,0,0,YE1728
+Hajjah City,10,0,0,0,0,0,0,YE1728
+Hajjah City,11,0,0,0,0,0,0,YE1728
+Hajjah City,12,0,0,0,0,0,0,YE1728
+Hajjah City,13,0,0,0,0,0,0,YE1728
+Hajjah City,14,0,0,0,0,0,0,YE1728
+Hajjah City,15,0,0,0,0,0,0,YE1728
+Hajjah City,16,0,0,0,0,0,0,YE1728
+Hajjah City,17,0,0,0,0,0,0,YE1728
+Hajjah City,18,0,0,0,0,0,0,YE1728
+Hajjah City,19,0,0,0,0,0,0,YE1728
+Hajjah City,20,37,112,149,149,60.124,60.124,YE1728
+Hajjah City,21,63,214,277,426,111.775,171.899,YE1728
+Hajjah City,22,54,307,361,787,145.67,317.569,YE1728
+Hajjah City,23,34,176,210,997,84.739,402.308,YE1728
+Hajjah City,24,53,177,230,1227,92.809,495.117,YE1728
+Hajjah City,25,61,184,245,1472,98.862,593.98,YE1728
+Hajjah City,26,19,123,142,1614,57.3,651.279,YE1728
+Haradh,1,0,0,0,0,0,0,YE1702
+Haradh,2,0,0,0,0,0,0,YE1702
+Haradh,3,0,0,0,0,0,0,YE1702
+Haradh,4,0,0,0,0,0,0,YE1702
+Haradh,5,0,0,0,0,0,0,YE1702
+Haradh,6,0,0,0,0,0,0,YE1702
+Haradh,7,0,0,0,0,0,0,YE1702
+Haradh,8,0,0,0,0,0,0,YE1702
+Haradh,9,0,0,0,0,0,0,YE1702
+Haradh,10,0,0,0,0,0,0,YE1702
+Haradh,11,0,0,0,0,0,0,YE1702
+Haradh,12,0,0,0,0,0,0,YE1702
+Haradh,13,0,0,0,0,0,0,YE1702
+Haradh,14,0,0,0,0,0,0,YE1702
+Haradh,15,0,0,0,0,0,0,YE1702
+Haradh,16,0,0,0,0,0,0,YE1702
+Haradh,17,0,0,0,0,0,0,YE1702
+Haradh,18,0,0,0,0,0,0,YE1702
+Haradh,19,0,1,1,1,0.083,0.083,YE1702
+Haradh,20,0,2,2,3,0.166,0.249,YE1702
+Haradh,21,2,6,8,11,0.663,0.912,YE1702
+Haradh,22,5,28,33,44,2.736,3.649,YE1702
+Haradh,23,11,56,67,111,5.556,9.205,YE1702
+Haradh,24,6,25,31,142,2.571,11.775,YE1702
+Haradh,25,4,18,22,164,1.824,13.599,YE1702
+Haradh,26,2,16,18,182,1.493,15.092,YE1702
+Hayran,1,0,0,0,0,0,0,YE1705
+Hayran,2,0,0,0,0,0,0,YE1705
+Hayran,3,0,0,0,0,0,0,YE1705
+Hayran,4,0,0,0,0,0,0,YE1705
+Hayran,5,0,0,0,0,0,0,YE1705
+Hayran,6,0,0,0,0,0,0,YE1705
+Hayran,7,0,0,0,0,0,0,YE1705
+Hayran,8,0,0,0,0,0,0,YE1705
+Hayran,9,0,0,0,0,0,0,YE1705
+Hayran,10,0,0,0,0,0,0,YE1705
+Hayran,11,0,0,0,0,0,0,YE1705
+Hayran,12,0,0,0,0,0,0,YE1705
+Hayran,13,0,0,0,0,0,0,YE1705
+Hayran,14,0,0,0,0,0,0,YE1705
+Hayran,15,0,0,0,0,0,0,YE1705
+Hayran,16,0,0,0,0,0,0,YE1705
+Hayran,17,0,0,0,0,0,0,YE1705
+Hayran,18,0,0,0,0,0,0,YE1705
+Hayran,19,1,1,2,2,0.975,0.975,YE1705
+Hayran,20,3,8,11,13,5.362,6.337,YE1705
+Hayran,21,2,7,9,22,4.387,10.725,YE1705
+Hayran,22,4,37,41,63,19.987,30.712,YE1705
+Hayran,23,16,59,75,138,36.562,67.274,YE1705
+Hayran,24,16,66,82,220,39.975,107.249,YE1705
+Hayran,25,14,35,49,269,23.887,131.136,YE1705
+Hayran,26,7,32,39,308,19.012,150.149,YE1705
+Khayran Al Muharraq,1,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,2,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,3,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,4,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,5,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,6,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,7,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,8,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,9,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,10,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,11,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,12,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,13,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,14,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,15,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,16,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,17,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,18,0,0,0,0,0,0,YE1711
+Khayran Al Muharraq,19,0,1,1,1,0.11,0.11,YE1711
+Khayran Al Muharraq,20,0,3,3,4,0.33,0.44,YE1711
+Khayran Al Muharraq,21,1,9,10,14,1.099,1.539,YE1711
+Khayran Al Muharraq,22,6,26,32,46,3.518,5.057,YE1711
+Khayran Al Muharraq,23,8,40,48,94,5.277,10.334,YE1711
+Khayran Al Muharraq,24,15,84,99,193,10.884,21.219,YE1711
+Khayran Al Muharraq,25,27,178,205,398,22.538,43.756,YE1711
+Khayran Al Muharraq,26,14,137,151,549,16.601,60.358,YE1711
+Ku'aydinah,1,0,0,0,0,0,0,YE1722
+Ku'aydinah,2,0,0,0,0,0,0,YE1722
+Ku'aydinah,3,0,0,0,0,0,0,YE1722
+Ku'aydinah,4,0,0,0,0,0,0,YE1722
+Ku'aydinah,5,0,0,0,0,0,0,YE1722
+Ku'aydinah,6,0,0,0,0,0,0,YE1722
+Ku'aydinah,7,0,0,0,0,0,0,YE1722
+Ku'aydinah,8,0,0,0,0,0,0,YE1722
+Ku'aydinah,9,0,0,0,0,0,0,YE1722
+Ku'aydinah,10,0,0,0,0,0,0,YE1722
+Ku'aydinah,11,0,0,0,0,0,0,YE1722
+Ku'aydinah,12,0,0,0,0,0,0,YE1722
+Ku'aydinah,13,0,0,0,0,0,0,YE1722
+Ku'aydinah,14,0,0,0,0,0,0,YE1722
+Ku'aydinah,15,0,1,1,1,0.109,0.109,YE1722
+Ku'aydinah,16,0,0,0,1,0,0.109,YE1722
+Ku'aydinah,17,0,0,0,1,0,0.109,YE1722
+Ku'aydinah,18,0,3,3,4,0.327,0.436,YE1722
+Ku'aydinah,19,0,8,8,12,0.871,1.307,YE1722
+Ku'aydinah,20,3,63,66,78,7.19,8.497,YE1722
+Ku'aydinah,21,10,91,101,179,11.002,19.499,YE1722
+Ku'aydinah,22,43,134,177,356,19.281,38.781,YE1722
+Ku'aydinah,23,43,111,154,510,16.776,55.557,YE1722
+Ku'aydinah,24,36,169,205,715,22.332,77.888,YE1722
+Ku'aydinah,25,43,360,403,1118,43.901,121.789,YE1722
+Ku'aydinah,26,19,162,181,1299,19.717,141.506,YE1722
+Kuhlan Affar ,1,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,2,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,3,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,4,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,5,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,6,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,7,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,8,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,9,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,10,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,11,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,12,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,13,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,14,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,15,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,16,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,17,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,18,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,19,0,0,0,0,0,0,YE1718
+Kuhlan Affar ,20,2,6,8,8,1.499,1.499,YE1718
+Kuhlan Affar ,21,0,6,6,14,1.125,2.624,YE1718
+Kuhlan Affar ,22,1,22,23,37,4.311,6.934,YE1718
+Kuhlan Affar ,23,1,9,10,47,1.874,8.809,YE1718
+Kuhlan Affar ,24,2,21,23,70,4.311,13.119,YE1718
+Kuhlan Affar ,25,6,8,14,84,2.624,15.743,YE1718
+Kuhlan Affar ,26,3,4,7,91,1.312,17.055,YE1718
+Kuhlan Ash Sharaf,1,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,2,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,3,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,4,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,5,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,6,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,7,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,8,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,9,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,10,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,11,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,12,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,13,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,14,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,15,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,16,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,17,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,18,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,19,0,0,0,0,0,0,YE1709
+Kuhlan Ash Sharaf,20,0,1,1,1,0.169,0.169,YE1709
+Kuhlan Ash Sharaf,21,0,0,0,1,0,0.169,YE1709
+Kuhlan Ash Sharaf,22,1,1,2,3,0.337,0.506,YE1709
+Kuhlan Ash Sharaf,23,0,1,1,4,0.169,0.675,YE1709
+Kuhlan Ash Sharaf,24,1,2,3,7,0.506,1.18,YE1709
+Kuhlan Ash Sharaf,25,0,2,2,9,0.337,1.518,YE1709
+Kuhlan Ash Sharaf,26,1,1,2,11,0.337,1.855,YE1709
+Kushar,1,0,0,0,0,0,0,YE1707
+Kushar,2,0,0,0,0,0,0,YE1707
+Kushar,3,0,0,0,0,0,0,YE1707
+Kushar,4,0,0,0,0,0,0,YE1707
+Kushar,5,0,0,0,0,0,0,YE1707
+Kushar,6,0,0,0,0,0,0,YE1707
+Kushar,7,0,0,0,0,0,0,YE1707
+Kushar,8,0,0,0,0,0,0,YE1707
+Kushar,9,0,0,0,0,0,0,YE1707
+Kushar,10,0,0,0,0,0,0,YE1707
+Kushar,11,0,0,0,0,0,0,YE1707
+Kushar,12,0,0,0,0,0,0,YE1707
+Kushar,13,0,0,0,0,0,0,YE1707
+Kushar,14,0,0,0,0,0,0,YE1707
+Kushar,15,0,0,0,0,0,0,YE1707
+Kushar,16,6,35,41,41,4.179,4.179,YE1707
+Kushar,17,5,37,42,83,4.281,8.46,YE1707
+Kushar,18,5,37,42,125,4.281,12.74,YE1707
+Kushar,19,1,15,16,141,1.631,14.371,YE1707
+Kushar,20,7,17,24,165,2.446,16.817,YE1707
+Kushar,21,6,34,40,205,4.077,20.894,YE1707
+Kushar,22,10,48,58,263,5.912,26.806,YE1707
+Kushar,23,12,40,52,315,5.3,32.106,YE1707
+Kushar,24,30,120,150,465,15.288,47.394,YE1707
+Kushar,25,31,172,203,668,20.69,68.085,YE1707
+Kushar,26,17,116,133,801,13.556,81.641,YE1707
+Mabyan,1,0,0,0,0,0,0,YE1720
+Mabyan,2,0,0,0,0,0,0,YE1720
+Mabyan,3,0,0,0,0,0,0,YE1720
+Mabyan,4,0,0,0,0,0,0,YE1720
+Mabyan,5,0,0,0,0,0,0,YE1720
+Mabyan,6,0,0,0,0,0,0,YE1720
+Mabyan,7,0,0,0,0,0,0,YE1720
+Mabyan,8,0,0,0,0,0,0,YE1720
+Mabyan,9,0,0,0,0,0,0,YE1720
+Mabyan,10,0,0,0,0,0,0,YE1720
+Mabyan,11,0,0,0,0,0,0,YE1720
+Mabyan,12,0,0,0,0,0,0,YE1720
+Mabyan,13,0,0,0,0,0,0,YE1720
+Mabyan,14,0,0,0,0,0,0,YE1720
+Mabyan,15,0,0,0,0,0,0,YE1720
+Mabyan,16,0,0,0,0,0,0,YE1720
+Mabyan,17,0,0,0,0,0,0,YE1720
+Mabyan,18,0,0,0,0,0,0,YE1720
+Mabyan,19,0,0,0,0,0,0,YE1720
+Mabyan,20,12,48,60,60,8.93,8.93,YE1720
+Mabyan,21,23,97,120,180,17.86,26.79,YE1720
+Mabyan,22,27,111,138,318,20.539,47.329,YE1720
+Mabyan,23,37,130,167,485,24.855,72.184,YE1720
+Mabyan,24,38,125,163,648,24.26,96.444,YE1720
+Mabyan,25,41,172,213,861,31.702,128.146,YE1720
+Mabyan,26,18,115,133,994,19.795,147.941,YE1720
+Midi,1,0,0,0,0,0,0,YE1703
+Midi,2,0,0,0,0,0,0,YE1703
+Midi,3,0,0,0,0,0,0,YE1703
+Midi,4,0,0,0,0,0,0,YE1703
+Midi,5,0,0,0,0,0,0,YE1703
+Midi,6,0,0,0,0,0,0,YE1703
+Midi,7,0,0,0,0,0,0,YE1703
+Midi,8,0,0,0,0,0,0,YE1703
+Midi,9,0,0,0,0,0,0,YE1703
+Midi,10,0,0,0,0,0,0,YE1703
+Midi,11,0,0,0,0,0,0,YE1703
+Midi,12,0,0,0,0,0,0,YE1703
+Midi,13,0,0,0,0,0,0,YE1703
+Midi,14,0,0,0,0,0,0,YE1703
+Midi,15,0,0,0,0,0,0,YE1703
+Midi,16,0,0,0,0,0,0,YE1703
+Midi,17,0,0,0,0,0,0,YE1703
+Midi,18,0,0,0,0,0,0,YE1703
+Midi,19,0,0,0,0,0,0,YE1703
+Midi,20,0,0,0,0,0,0,YE1703
+Midi,21,0,0,0,0,0,0,YE1703
+Midi,22,0,1,1,1,0.459,0.459,YE1703
+Midi,23,2,6,8,9,3.675,4.135,YE1703
+Midi,24,0,0,0,9,0,4.135,YE1703
+Midi,25,0,0,0,9,0,4.135,YE1703
+Midi,26,1,2,3,12,1.378,5.513,YE1703
+Mustaba,1,0,0,0,0,0,0,YE1706
+Mustaba,2,0,0,0,0,0,0,YE1706
+Mustaba,3,0,0,0,0,0,0,YE1706
+Mustaba,4,0,0,0,0,0,0,YE1706
+Mustaba,5,0,0,0,0,0,0,YE1706
+Mustaba,6,0,0,0,0,0,0,YE1706
+Mustaba,7,0,0,0,0,0,0,YE1706
+Mustaba,8,0,0,0,0,0,0,YE1706
+Mustaba,9,0,0,0,0,0,0,YE1706
+Mustaba,10,0,0,0,0,0,0,YE1706
+Mustaba,11,0,0,0,0,0,0,YE1706
+Mustaba,12,0,0,0,0,0,0,YE1706
+Mustaba,13,0,0,0,0,0,0,YE1706
+Mustaba,14,0,0,0,0,0,0,YE1706
+Mustaba,15,0,0,0,0,0,0,YE1706
+Mustaba,16,0,0,0,0,0,0,YE1706
+Mustaba,17,0,0,0,0,0,0,YE1706
+Mustaba,18,0,0,0,0,0,0,YE1706
+Mustaba,19,0,3,3,3,0.533,0.533,YE1706
+Mustaba,20,1,3,4,7,0.711,1.244,YE1706
+Mustaba,21,1,4,5,12,0.888,2.132,YE1706
+Mustaba,22,1,10,11,23,1.954,4.086,YE1706
+Mustaba,23,3,30,33,56,5.863,9.949,YE1706
+Mustaba,24,6,45,51,107,9.061,19.009,YE1706
+Mustaba,25,7,36,43,150,7.639,26.649,YE1706
+Mustaba,26,12,40,52,202,9.238,35.887,YE1706
+Najrah,1,0,0,0,0,0,0,YE1726
+Najrah,2,0,0,0,0,0,0,YE1726
+Najrah,3,0,0,0,0,0,0,YE1726
+Najrah,4,0,0,0,0,0,0,YE1726
+Najrah,5,0,0,0,0,0,0,YE1726
+Najrah,6,0,0,0,0,0,0,YE1726
+Najrah,7,0,0,0,0,0,0,YE1726
+Najrah,8,0,0,0,0,0,0,YE1726
+Najrah,9,0,0,0,0,0,0,YE1726
+Najrah,10,0,0,0,0,0,0,YE1726
+Najrah,11,0,0,0,0,0,0,YE1726
+Najrah,12,0,0,0,0,0,0,YE1726
+Najrah,13,0,0,0,0,0,0,YE1726
+Najrah,14,0,0,0,0,0,0,YE1726
+Najrah,15,0,0,0,0,0,0,YE1726
+Najrah,16,0,0,0,0,0,0,YE1726
+Najrah,17,0,0,0,0,0,0,YE1726
+Najrah,18,0,0,0,0,0,0,YE1726
+Najrah,19,0,0,0,0,0,0,YE1726
+Najrah,20,1,3,4,4,0.918,0.918,YE1726
+Najrah,21,2,12,14,18,3.214,4.132,YE1726
+Najrah,22,5,38,43,61,9.871,14.003,YE1726
+Najrah,23,6,32,38,99,8.723,22.726,YE1726
+Najrah,24,5,22,27,126,6.198,28.924,YE1726
+Najrah,25,5,16,21,147,4.821,33.745,YE1726
+Najrah,26,4,3,7,154,1.607,35.352,YE1726
+Qafl Shamer ,1,0,0,0,0,0,0,YE1713
+Qafl Shamer ,2,0,0,0,0,0,0,YE1713
+Qafl Shamer ,3,0,0,0,0,0,0,YE1713
+Qafl Shamer ,4,0,0,0,0,0,0,YE1713
+Qafl Shamer ,5,0,0,0,0,0,0,YE1713
+Qafl Shamer ,6,0,0,0,0,0,0,YE1713
+Qafl Shamer ,7,0,0,0,0,0,0,YE1713
+Qafl Shamer ,8,0,0,0,0,0,0,YE1713
+Qafl Shamer ,9,0,0,0,0,0,0,YE1713
+Qafl Shamer ,10,0,0,0,0,0,0,YE1713
+Qafl Shamer ,11,0,0,0,0,0,0,YE1713
+Qafl Shamer ,12,0,0,0,0,0,0,YE1713
+Qafl Shamer ,13,0,0,0,0,0,0,YE1713
+Qafl Shamer ,14,0,0,0,0,0,0,YE1713
+Qafl Shamer ,15,0,0,0,0,0,0,YE1713
+Qafl Shamer ,16,0,0,0,0,0,0,YE1713
+Qafl Shamer ,17,0,0,0,0,0,0,YE1713
+Qafl Shamer ,18,0,3,3,3,0.449,0.449,YE1713
+Qafl Shamer ,19,3,14,17,20,2.547,2.996,YE1713
+Qafl Shamer ,20,12,19,31,51,4.644,7.64,YE1713
+Qafl Shamer ,21,10,34,44,95,6.591,14.231,YE1713
+Qafl Shamer ,22,16,36,52,147,7.789,22.02,YE1713
+Qafl Shamer ,23,16,106,122,269,18.275,40.295,YE1713
+Qafl Shamer ,24,64,363,427,696,63.962,104.257,YE1713
+Qafl Shamer ,25,91,512,603,1299,90.326,194.583,YE1713
+Qafl Shamer ,26,30,200,230,1529,34.453,229.036,YE1713
+Qarah,1,0,0,0,0,0,0,YE1731
+Qarah,2,0,0,0,0,0,0,YE1731
+Qarah,3,0,0,0,0,0,0,YE1731
+Qarah,4,0,0,0,0,0,0,YE1731
+Qarah,5,0,0,0,0,0,0,YE1731
+Qarah,6,0,0,0,0,0,0,YE1731
+Qarah,7,0,0,0,0,0,0,YE1731
+Qarah,8,0,0,0,0,0,0,YE1731
+Qarah,9,0,0,0,0,0,0,YE1731
+Qarah,10,0,0,0,0,0,0,YE1731
+Qarah,11,0,0,0,0,0,0,YE1731
+Qarah,12,0,0,0,0,0,0,YE1731
+Qarah,13,0,0,0,0,0,0,YE1731
+Qarah,14,0,0,0,0,0,0,YE1731
+Qarah,15,0,0,0,0,0,0,YE1731
+Qarah,16,0,0,0,0,0,0,YE1731
+Qarah,17,0,0,0,0,0,0,YE1731
+Qarah,18,0,0,0,0,0,0,YE1731
+Qarah,19,0,0,0,0,0,0,YE1731
+Qarah,20,0,0,0,0,0,0,YE1731
+Qarah,21,0,0,0,0,0,0,YE1731
+Qarah,22,0,0,0,0,0,0,YE1731
+Qarah,23,0,2,2,2,0.493,0.493,YE1731
+Qarah,24,0,2,2,4,0.493,0.986,YE1731
+Qarah,25,5,10,15,19,3.697,4.683,YE1731
+Qarah,26,3,31,34,53,8.38,13.064,YE1731
+Sharas,1,0,0,0,0,0,0,YE1719
+Sharas,2,0,0,0,0,0,0,YE1719
+Sharas,3,0,0,0,0,0,0,YE1719
+Sharas,4,0,0,0,0,0,0,YE1719
+Sharas,5,0,0,0,0,0,0,YE1719
+Sharas,6,0,0,0,0,0,0,YE1719
+Sharas,7,0,0,0,0,0,0,YE1719
+Sharas,8,0,0,0,0,0,0,YE1719
+Sharas,9,0,0,0,0,0,0,YE1719
+Sharas,10,0,0,0,0,0,0,YE1719
+Sharas,11,0,0,0,0,0,0,YE1719
+Sharas,12,0,0,0,0,0,0,YE1719
+Sharas,13,0,0,0,0,0,0,YE1719
+Sharas,14,0,0,0,0,0,0,YE1719
+Sharas,15,0,0,0,0,0,0,YE1719
+Sharas,16,0,0,0,0,0,0,YE1719
+Sharas,17,0,0,0,0,0,0,YE1719
+Sharas,18,0,0,0,0,0,0,YE1719
+Sharas,19,0,0,0,0,0,0,YE1719
+Sharas,20,5,14,19,19,9.153,9.153,YE1719
+Sharas,21,7,16,23,42,11.08,20.232,YE1719
+Sharas,22,14,26,40,82,19.269,39.501,YE1719
+Sharas,23,15,32,47,129,22.641,62.142,YE1719
+Sharas,24,9,22,31,160,14.933,77.075,YE1719
+Sharas,25,8,36,44,204,21.196,98.271,YE1719
+Sharas,26,4,19,23,227,11.08,109.35,YE1719
+Wadhrah,1,0,0,0,0,0,0,YE1723
+Wadhrah,2,0,0,0,0,0,0,YE1723
+Wadhrah,3,0,0,0,0,0,0,YE1723
+Wadhrah,4,0,0,0,0,0,0,YE1723
+Wadhrah,5,0,0,0,0,0,0,YE1723
+Wadhrah,6,0,0,0,0,0,0,YE1723
+Wadhrah,7,0,0,0,0,0,0,YE1723
+Wadhrah,8,0,0,0,0,0,0,YE1723
+Wadhrah,9,0,0,0,0,0,0,YE1723
+Wadhrah,10,0,0,0,0,0,0,YE1723
+Wadhrah,11,0,0,0,0,0,0,YE1723
+Wadhrah,12,0,0,0,0,0,0,YE1723
+Wadhrah,13,0,0,0,0,0,0,YE1723
+Wadhrah,14,0,0,0,0,0,0,YE1723
+Wadhrah,15,0,0,0,0,0,0,YE1723
+Wadhrah,16,0,0,0,0,0,0,YE1723
+Wadhrah,17,0,0,0,0,0,0,YE1723
+Wadhrah,18,0,0,0,0,0,0,YE1723
+Wadhrah,19,0,0,0,0,0,0,YE1723
+Wadhrah,20,0,6,6,6,4.147,4.147,YE1723
+Wadhrah,21,3,8,11,17,7.602,11.748,YE1723
+Wadhrah,22,1,1,2,19,1.382,13.131,YE1723
+Wadhrah,23,3,10,13,32,8.984,22.115,YE1723
+Wadhrah,24,7,11,18,50,12.44,34.554,YE1723
+Wadhrah,25,3,7,10,60,6.911,41.465,YE1723
+Wadhrah,26,1,9,10,70,6.911,48.376,YE1723
+Washhah,1,0,0,0,0,0,0,YE1730
+Washhah,2,0,0,0,0,0,0,YE1730
+Washhah,3,0,0,0,0,0,0,YE1730
+Washhah,4,0,0,0,0,0,0,YE1730
+Washhah,5,0,0,0,0,0,0,YE1730
+Washhah,6,0,0,0,0,0,0,YE1730
+Washhah,7,0,0,0,0,0,0,YE1730
+Washhah,8,0,0,0,0,0,0,YE1730
+Washhah,9,0,0,0,0,0,0,YE1730
+Washhah,10,0,0,0,0,0,0,YE1730
+Washhah,11,0,0,0,0,0,0,YE1730
+Washhah,12,0,0,0,0,0,0,YE1730
+Washhah,13,0,0,0,0,0,0,YE1730
+Washhah,14,0,0,0,0,0,0,YE1730
+Washhah,15,0,0,0,0,0,0,YE1730
+Washhah,16,0,0,0,0,0,0,YE1730
+Washhah,17,0,0,0,0,0,0,YE1730
+Washhah,18,0,1,1,1,0.121,0.121,YE1730
+Washhah,19,0,0,0,1,0,0.121,YE1730
+Washhah,20,0,4,4,5,0.482,0.603,YE1730
+Washhah,21,13,64,77,82,9.284,9.887,YE1730
+Washhah,22,7,26,33,115,3.979,13.866,YE1730
+Washhah,23,2,27,29,144,3.497,17.363,YE1730
+Washhah,24,7,70,77,221,9.284,26.647,YE1730
+Washhah,25,9,65,74,295,8.922,35.569,YE1730
+Washhah,26,5,133,138,433,16.639,52.208,YE1730
+Az Zuhrah,1,0,0,0,0,0,0,YE1801
+Az Zuhrah,2,0,0,0,0,0,0,YE1801
+Az Zuhrah,3,0,0,0,0,0,0,YE1801
+Az Zuhrah,4,0,0,0,0,0,0,YE1801
+Az Zuhrah,5,0,0,0,0,0,0,YE1801
+Az Zuhrah,6,0,0,0,0,0,0,YE1801
+Az Zuhrah,7,0,0,0,0,0,0,YE1801
+Az Zuhrah,8,0,0,0,0,0,0,YE1801
+Az Zuhrah,9,0,0,0,0,0,0,YE1801
+Az Zuhrah,10,0,0,0,0,0,0,YE1801
+Az Zuhrah,11,0,0,0,0,0,0,YE1801
+Az Zuhrah,12,0,0,0,0,0,0,YE1801
+Az Zuhrah,13,0,0,0,0,0,0,YE1801
+Az Zuhrah,14,0,0,0,0,0,0,YE1801
+Az Zuhrah,15,0,0,0,0,0,0,YE1801
+Az Zuhrah,16,0,0,0,0,0,0,YE1801
+Az Zuhrah,17,0,0,0,0,0,0,YE1801
+Az Zuhrah,18,1,2,3,3,0.197,0.197,YE1801
+Az Zuhrah,19,6,27,33,36,2.163,2.36,YE1801
+Az Zuhrah,20,32,95,127,163,8.326,10.686,YE1801
+Az Zuhrah,21,57,125,182,345,11.932,22.618,YE1801
+Az Zuhrah,22,79,149,228,573,14.947,37.565,YE1801
+Az Zuhrah,23,69,180,249,822,16.324,53.89,YE1801
+Az Zuhrah,24,49,200,249,1071,16.324,70.214,YE1801
+Az Zuhrah,25,60,218,278,1349,18.225,88.439,YE1801
+Az Zuhrah,26,64,215,279,1628,18.291,106.73,YE1801
+Alluheyah,1,0,0,0,0,0,0,YE1802
+Alluheyah,2,0,0,0,0,0,0,YE1802
+Alluheyah,3,0,0,0,0,0,0,YE1802
+Alluheyah,4,0,0,0,0,0,0,YE1802
+Alluheyah,5,0,0,0,0,0,0,YE1802
+Alluheyah,6,0,0,0,0,0,0,YE1802
+Alluheyah,7,0,0,0,0,0,0,YE1802
+Alluheyah,8,0,0,0,0,0,0,YE1802
+Alluheyah,9,0,0,0,0,0,0,YE1802
+Alluheyah,10,0,0,0,0,0,0,YE1802
+Alluheyah,11,0,0,0,0,0,0,YE1802
+Alluheyah,12,0,0,0,0,0,0,YE1802
+Alluheyah,13,0,0,0,0,0,0,YE1802
+Alluheyah,14,0,0,0,0,0,0,YE1802
+Alluheyah,15,0,0,0,0,0,0,YE1802
+Alluheyah,16,0,0,0,0,0,0,YE1802
+Alluheyah,17,0,0,0,0,0,0,YE1802
+Alluheyah,18,0,0,0,0,0,0,YE1802
+Alluheyah,19,0,1,1,1,0.089,0.089,YE1802
+Alluheyah,20,0,0,0,1,0,0.089,YE1802
+Alluheyah,21,0,3,3,4,0.268,0.357,YE1802
+Alluheyah,22,1,24,25,29,2.23,2.586,YE1802
+Alluheyah,23,3,27,30,59,2.676,5.262,YE1802
+Alluheyah,24,5,28,33,92,2.943,8.205,YE1802
+Alluheyah,25,5,33,38,130,3.389,11.594,YE1802
+Alluheyah,26,12,55,67,197,5.976,17.57,YE1802
+Az Zaydiyah,1,0,0,0,0,0,0,YE1807
+Az Zaydiyah,2,0,0,0,0,0,0,YE1807
+Az Zaydiyah,3,0,0,0,0,0,0,YE1807
+Az Zaydiyah,4,0,0,0,0,0,0,YE1807
+Az Zaydiyah,5,0,0,0,0,0,0,YE1807
+Az Zaydiyah,6,0,0,0,0,0,0,YE1807
+Az Zaydiyah,7,0,0,0,0,0,0,YE1807
+Az Zaydiyah,8,0,0,0,0,0,0,YE1807
+Az Zaydiyah,9,0,0,0,0,0,0,YE1807
+Az Zaydiyah,10,0,0,0,0,0,0,YE1807
+Az Zaydiyah,11,0,0,0,0,0,0,YE1807
+Az Zaydiyah,12,0,0,0,0,0,0,YE1807
+Az Zaydiyah,13,0,0,0,0,0,0,YE1807
+Az Zaydiyah,14,0,0,0,0,0,0,YE1807
+Az Zaydiyah,15,0,0,0,0,0,0,YE1807
+Az Zaydiyah,16,0,0,0,0,0,0,YE1807
+Az Zaydiyah,17,0,0,0,0,0,0,YE1807
+Az Zaydiyah,18,0,0,0,0,0,0,YE1807
+Az Zaydiyah,19,0,0,0,0,0,0,YE1807
+Az Zaydiyah,20,0,0,0,0,0,0,YE1807
+Az Zaydiyah,21,0,0,0,0,0,0,YE1807
+Az Zaydiyah,22,0,1,1,1,0.081,0.081,YE1807
+Az Zaydiyah,23,1,3,4,5,0.325,0.406,YE1807
+Az Zaydiyah,24,0,3,3,8,0.244,0.65,YE1807
+Az Zaydiyah,25,1,5,6,14,0.488,1.138,YE1807
+Az Zaydiyah,26,2,9,11,25,0.894,2.031,YE1807
+Al Qanawis,1,0,0,0,0,0,0,YE1806
+Al Qanawis,2,0,0,0,0,0,0,YE1806
+Al Qanawis,3,0,0,0,0,0,0,YE1806
+Al Qanawis,4,0,0,0,0,0,0,YE1806
+Al Qanawis,5,0,0,0,0,0,0,YE1806
+Al Qanawis,6,0,0,0,0,0,0,YE1806
+Al Qanawis,7,0,0,0,0,0,0,YE1806
+Al Qanawis,8,0,0,0,0,0,0,YE1806
+Al Qanawis,9,0,0,0,0,0,0,YE1806
+Al Qanawis,10,0,0,0,0,0,0,YE1806
+Al Qanawis,11,0,0,0,0,0,0,YE1806
+Al Qanawis,12,0,0,0,0,0,0,YE1806
+Al Qanawis,13,0,0,0,0,0,0,YE1806
+Al Qanawis,14,0,0,0,0,0,0,YE1806
+Al Qanawis,15,0,0,0,0,0,0,YE1806
+Al Qanawis,16,0,0,0,0,0,0,YE1806
+Al Qanawis,17,0,0,0,0,0,0,YE1806
+Al Qanawis,18,0,0,0,0,0,0,YE1806
+Al Qanawis,19,0,0,0,0,0,0,YE1806
+Al Qanawis,20,0,0,0,0,0,0,YE1806
+Al Qanawis,21,0,0,0,0,0,0,YE1806
+Al Qanawis,22,0,1,1,1,0.121,0.121,YE1806
+Al Qanawis,23,3,26,29,30,3.509,3.63,YE1806
+Al Qanawis,24,1,7,8,38,0.968,4.598,YE1806
+Al Qanawis,25,3,26,29,67,3.509,8.108,YE1806
+Al Qanawis,26,1,27,28,95,3.388,11.496,YE1806
