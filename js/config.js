@@ -176,6 +176,24 @@ var configFile = {
         },
         types : {
             rates : {
+                /* For each rate analysis
+                 * "config" object properties :
+	                 * name : Name of the indicator to be displayed in the Map analysis selector.
+	                 * abbreviation : Abbreviated indicator - displayed in the legend and in the pop-ups.
+	                 * fieldRate : Field that contains the rate indicator in the epi dataset.
+	                 * fieldAbsolute : Field that contains the absolute indicator in the epi dataset.
+	                 * otherName : Other way to mention the indicator - displayed in the legend
+	                 * printName : Name of the indicator as it appears in the exported .pdf file.
+	                 * 
+                 * "classes" object :
+	                 * Define the ranges for the analysis by replacing the following values.
+	                 *      - *_less : Includes the values stricly inferior to the number, e.g : values < 5.
+	                 *      - *_between : Includes the values superior or equal to the first number and strictly inferior to the second number, e.g : 5 =< values < 10.
+	                 *      - *_more : Includes the values superior or equal to the number, e.g : values >= 150.
+	                 *      
+	                 * Colors are set in RGB as they will be automatically converted to RGBA once running the scripts.
+	                 * 
+                 */            	
                 analysis_1 : {
                     config : {
                         name            :   "Weekly incidence rate (x 10000)",
@@ -225,48 +243,17 @@ var configFile = {
                 sliderSizeStart : [1, 600]
             }
         },       
-        /* Define the ranges for the analysis by replacing the following values.
-         *      - *_less : Includes the values stricly inferior to the number, e.g : values < 5.
-         *      - *_between : Includes the values superior or equal to the first number and strictly inferior to the second number, e.g : 5 =< values < 10.
-         *      - *_more : Includes the values superior or equal to the number, e.g : values >= 150.
-         *      
-         *      Colors are set in RGB as they will be automatically converted to RGBA once running the scripts.
-         */
-        analysis_1 : {
-            class1_less     :   {value : 5,             color : "rgb(254,229,217)"},
-            class2_between  :   {value : [5, 10],       color : "rgb(252,187,161)"},
-            class3_between  :   {value : [10, 50],      color : "rgb(252,146,114)"},
-            class4_between  :   {value : [50, 100],     color : "rgb(251,106,74)"},
-            class5_between  :   {value : [100, 150],    color : "rgb(222,45,38)"},
-            class6_more     :   {value : 150,           color : "rgb(165,15,21)"}
-        },
-        analysis_2 : {
-            class1_less     :   {value : 7,             color : "rgb(254,229,217)"},
-            class2_between  :   {value : [7, 10],       color : "rgb(252,187,161)"},
-            class3_between  :   {value : [10, 50],      color : "rgb(252,146,114)"},
-            class4_between  :   {value : [50, 100],     color : "rgb(251,106,74)"},
-            class5_between  :   {value : [100, 300],    color : "rgb(222,45,38)"},
-            class6_more     :   {value : 300,           color : "rgb(165,15,21)"}
-        },
-        legendParam : {
-            // Choose which property of the geometry object will be used to display the geometry title.
-            forGeometryTitle : "name",
-            // Choose which property of the analysis object will be used to display the analysis title.
-            forAnalysisTitle : "otherName",
-            // Set space between two features (between classes).
-            verticalGap : 6,
-            // Set space between a graphic element and its label.
-            horizontalGap : 15,
-            // Define the size of the graphic rectangles.
-            rectangleHeight : 10,
-            rectangleWidth  : 25,
-            // Define label font size and color.
-            labelSize   : 11,
-            labelColor  : "rgba(0,0,0,1)",
-            // Arrange label vertical difference with the rectangles.
-            labelShift  : 8,
-            // Title for the other layers' section.
-            otherSectionTitle   : "Context"
+        legendParam : {            
+            forGeometryTitle : "name",			// Choose which property of the geometry object will be used to display the geometry title.
+            forAnalysisTitle : "otherName",		// Choose which property of the analysis object will be used to display the analysis title.
+            verticalGap : 6,            		// Set space between two features (between classes).            
+            horizontalGap : 15, 				// Set space between a graphic element and its label.         
+            rectangleHeight : 10,				// Define the height of the graphic rectangles.
+            rectangleWidth  : 25,				// Define the width of the graphic rectangles.
+            labelSize   : 11,            		// Define label font size.
+            labelColor  : "rgba(0,0,0,1)",		// Define label font color.
+            labelShift  : 8,	            	// Arrange label vertical gap with the rectangles.            
+            otherSectionTitle   : "Context"		// Title for the other layers' section.
         },
         chartsLayout : {
             cumulative : {
