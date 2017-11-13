@@ -33,6 +33,8 @@ var configFile = {
                 // Set the source of the EPI Dataset to be linked with above geometry. Must be a "Delimiter-separated values" file (.csv, .txt, ...).
                 source : "data/export_yemcholera.csv",
                 delimiter : ",",
+                // Remote source, to set as 'false' to avoid CORS issues for local use.
+                remote : true,
                 // Set the request header for password-protected remote sources - Leave blank for local source.
                 XMLHttpRequestHeader : {
                     header : "Authorization",

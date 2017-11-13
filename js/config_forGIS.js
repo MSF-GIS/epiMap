@@ -19,7 +19,9 @@
 					source : "data/export_yemcholera.csv",
 					// delimiter (STRING) - Defines the delimiter used in the dataset.
 					delimiter : ",",
-					// XMLHttpRequestHeader (header, value : STRING) - Set the request header for password-protected remote sources - Leave blank for local source.
+	                // remote (BOOLEAN) -  To be set as 'true' for online use. Set as 'false' to avoid CORS issues on local use.
+	                remote : true,					
+					// XMLHttpRequestHeader (header, value : STRING) - Set the request header for password-protected remote sources - Leave blank for local sources.
 	                XMLHttpRequestHeader : {
 	                    header : "Authorization",
 	                    value  : "253719af-9259-40f5-a003-6f0de8711c8f"
@@ -281,6 +283,12 @@
 	            }
 	        },
 	};
+	
+	
+	
+	
+	
+	// Send config to global object
 	configFile.mapViewInit = globalParameters.map;
 	configFile.data.analysisLayer.geometry = globalParameters.analysis.geoSources.polygons;
 	configFile.data.analysisLayer.geometryPoints = globalParameters.analysis.geoSources.points;
