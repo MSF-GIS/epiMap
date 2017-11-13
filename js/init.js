@@ -91,10 +91,6 @@ window["analysisType"] = sourceObj[$("#selectorAnalysis").val()]["name"];
 
 
 $("#inAppTitle").html(configFile.layout.appTitle).show();
-if (configFile.layout.displayAppDisclaimer) {
-    $("#inAppDisclaimer").html('<i>' + configFile.layout.appDisclaimer + '</i>');
-    $("#inAppDisclaimerRow").show();
-};
 $("#analysisSectionTitle").html('<strong>' + configFile.layout.analysisSectionTitle + '</strong>').show();
 $("#dimensionTitle").html('<strong>' + configFile.layout.dimensionTitle + '</strong>').show();
 $("#selectionTitle").html('<strong>' + configFile.layout.selectionTitle + '</strong>').show();
@@ -184,6 +180,10 @@ if (configFile.layout.mapSettings) {
        $("#tSLabel").toggleClass('toggleSettingsSpanClose toggleSettingsSpanOpen');
     });    
 }
+//if (configFile.layout.displayAppDisclaimer) {
+//    $("#inAppDisclaimer").html('<i>' + configFile.layout.appDisclaimer + '</i>');
+//    $("#inAppDisclaimerRow").show();
+//};
 
 
 

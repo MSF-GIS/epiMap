@@ -1,9 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 var configFile = {
     // Set the initial view (coordinates of the center and zoom level)
     mapViewInit : {
@@ -101,53 +95,6 @@ var configFile = {
         appDisclaimer : "This page displays incomplete data for educationnal purposes only",
         displayAppDisclaimer : true,
         mapSettings : true
-    },
-    paramObject : {
-        param : {},
-        gen : {
-            a : "default",
-            c : "default",
-            f : "default",
-            z : "default",
-            b : "default"
-        },
-        paramString : {
-            all : "default",
-            legend : "default"
-        },
-        method : function(a){
-            var p = this.param;
-            var g = this.gen;
-            var strLgd = "";
-            var an = "a=" + g.a + "&";
-            $.each(p[a], function(k, v) {
-                strLgd += k + "=" + v + "&";
-            });
-            strLgd += "t=" + g.t + "&" + "b=" + g.b;
-            this.paramString.legend = an + strLgd;
-            var strMap = "c=" + g.c + "&" + "z=" + g.z + "&" + "f=" + g.f + "&";
-            this.paramString.all = an + strMap + strLgd;
-            window.location.hash = this.paramString.all;
-        },
-        setup : function (){
-            var c = configFile.analysisFunctions;
-            var p = this.param;
-            var g = this. gen;
-            var m = configFile.mapViewInit;
-            var a = c.types;
-            g.c = [m.center.x, m.center.y];
-            g.z = m.zoomLevel;
-            g.f = configFile.data.analysisLayer.epiDataset.fieldsForAnalysis.defaultTime;
-            g.t = c.style.colors.transparency;
-            $.each(a.rates, function(k, v){
-                p[k] = {};
-                p[k].cS = [c.style.circles[k].minArea, c.style.circles[k].maxArea];
-                p[k].cF = a.cases.fill.color;
-                p[k].cO = a.cases.stroke.color;
-                p[k].cW = a.cases.stroke.width;
-            });
-        }
-
     },
     analysisFunctions : {
         // Style of the polygons in the analysis layer.
@@ -535,7 +482,54 @@ var configFile = {
             }
         }
         
-    }
+    },
+    paramObject : {
+        param : {},
+        gen : {
+            a : "default",
+            c : "default",
+            f : "default",
+            z : "default",
+            b : "default"
+        },
+        paramString : {
+            all : "default",
+            legend : "default"
+        },
+        method : function(a){
+            var p = this.param;
+            var g = this.gen;
+            var strLgd = "";
+            var an = "a=" + g.a + "&";
+            $.each(p[a], function(k, v) {
+                strLgd += k + "=" + v + "&";
+            });
+            strLgd += "t=" + g.t + "&" + "b=" + g.b;
+            this.paramString.legend = an + strLgd;
+            var strMap = "c=" + g.c + "&" + "z=" + g.z + "&" + "f=" + g.f + "&";
+            this.paramString.all = an + strMap + strLgd;
+            window.location.hash = this.paramString.all;
+        },
+        setup : function (){
+            var c = configFile.analysisFunctions;
+            var p = this.param;
+            var g = this. gen;
+            var m = configFile.mapViewInit;
+            var a = c.types;
+            g.c = [m.center.x, m.center.y];
+            g.z = m.zoomLevel;
+            g.f = configFile.data.analysisLayer.epiDataset.fieldsForAnalysis.defaultTime;
+            g.t = c.style.colors.transparency;
+            $.each(a.rates, function(k, v){
+                p[k] = {};
+                p[k].cS = [c.style.circles[k].minArea, c.style.circles[k].maxArea];
+                p[k].cF = a.cases.fill.color;
+                p[k].cO = a.cases.stroke.color;
+                p[k].cW = a.cases.stroke.width;
+            });
+        }
+
+    },    
 };
 
 
