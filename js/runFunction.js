@@ -13,7 +13,13 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
         source: new ol.source.Vector({}),
         zIndex: 0
     });	
-    analysisLayer.getSource().addFeatures(TopoJsonFormat.readFeatures(geoPolygons));
+    
+    var formatPolygons = configFile.data.analysisLayer.geometry.format
+    if(configFile.format.indexOf(formatPolygons) === -1){
+    	window[formatPolygons] = new ol.format[formatPolygons];
+    	configFile.format.push(formatPolygons);
+    }
+    analysisLayer.getSource().addFeatures(window[formatPolygons].readFeatures(geoPolygons));
     $.each(analysisLayer.getSource().getFeatures(), function(i, v) {
         v.setId("aL" + i);
     });
@@ -25,7 +31,13 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
         source: new ol.source.Vector({}),
         zIndex: 1
     });	
-    analysisLayerPoints.getSource().addFeatures(TopoJsonFormat.readFeatures(geoPoints));
+    
+    var formatPoints = configFile.data.analysisLayer.geometryPoints.format
+    if(configFile.format.indexOf(formatPoints) === -1){
+    	window[formatPoints] = new ol.format[formatPoints];
+    	configFile.format.push(formatPoints);
+    }    
+    analysisLayerPoints.getSource().addFeatures(window[formatPoints].readFeatures(geoPoints));
     $.each(analysisLayerPoints.getSource().getFeatures(), function(i, v) {
         v.setId("aLP" + i);
     });        
@@ -741,32 +753,36 @@ setExportPdf();
         displayAnalysis($("#selectorAnalysis").val());
     });    
     
-var sliderWidth = $('#selectWidth')[0];
-
-noUiSlider.create(sliderWidth, {
-	start: parseFloat(configFile.paramObject.param[analysisType].cW),
-	tooltips: false,
-	range: {
-		'min': 0.1,
-		'max': 4
-	},
-	behaviour: 'drag',
-	step: 0.1
-});
-
-sliderWidth.noUiSlider.on('update', function(value){
-        configFile.analysisFunctions.cacheObj.points = {};
-        $("#Pick_strokeWidth").html(value);
-        configFile.paramObject.param[analysisType].cW = parseFloat(value[0]);
-        configFile.paramObject.method(analysisType);
-        displayAnalysis($("#selectorAnalysis").val());
-    });
-    
-    $(".minicolors-input").on('change', function() {
-        configFile.analysisFunctions.cacheObj.points = {};
-        configFile.paramObject.param[analysisType][this.dataset.obj] = this.value.replace(/ /g,'');
-        configFile.paramObject.method(analysisType);
-        displayAnalysis($("#selectorAnalysis").val());            
-    });
+	var sliderWidth = $('#selectWidth')[0];
+	noUiSlider.create(sliderWidth, {
+		start: parseFloat(configFile.paramObject.param[analysisType].cW),
+		tooltips: false,
+		range: {
+			'min': 0.1,
+			'max': 4
+		},
+		behaviour: 'drag',
+		step: 0.1
+	});
+	
+	sliderWidth.noUiSlider.on('update', function(value){
+	        configFile.analysisFunctions.cacheObj.points = {};
+	        $("#Pick_strokeWidth").html(value);
+	        configFile.paramObject.param[analysisType].cW = parseFloat(value[0]);
+	        configFile.paramObject.method(analysisType);
+	        displayAnalysis($("#selectorAnalysis").val());
+	});
+	    
+	$(".minicolors-input").on('change', function() {
+	    configFile.analysisFunctions.cacheObj.points = {};
+	    configFile.paramObject.param[analysisType][this.dataset.obj] = this.value.replace(/ /g,'');
+	    configFile.paramObject.method(analysisType);
+	    displayAnalysis($("#selectorAnalysis").val());            
+	});
+	
+	if (configFile.layout.displayAppDisclaimer) {
+	    $("#inAppDisclaimer").html('<i>' + configFile.layout.appDisclaimer + '</i>');
+	    $("#inAppDisclaimerRow").show();
+	};
 
 }

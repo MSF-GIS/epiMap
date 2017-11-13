@@ -14,7 +14,8 @@ var configFile = {
             geometry : {
                 name    : "Districts",                
                 source  : "data/yem_adm2.json",
-                format  : "",
+                // format (STRING) - Set the format of the dataset. Can be either "TopoJSON", "GeoJSON" or "EsriJSON".
+                format  : "TopoJSON",
                 // Joined field ('p' code).
                 geoCode : "admin2Pcod",
                 // Matching names for labels.
@@ -23,7 +24,8 @@ var configFile = {
             geometryPoints : {
                 name    : "Districts",                
                 source  : "data/yem_centroids_adm2.json",
-                format  : "",
+                // format (STRING) - Set the format of the dataset. Can be either "TopoJSON", "GeoJSON" or "EsriJSON".
+                format  : "TopoJSON",
                 // Joined field ('p' code).
                 geoCode : "admin2Pcod",
                 // Matching names for labels.
@@ -64,6 +66,8 @@ var configFile = {
             {
                 name    : "Governorates",
                 source  : "data/yem_adm1.json",
+                // format (STRING) - Set the format of the dataset.
+                format  : "TopoJSON",              
                 style   : {
                     fillColor   : "rgba(0,0,0,0)",
                     strokeColor : "rgba(0,0,0,1)",
@@ -532,7 +536,8 @@ var configFile = {
             });
         }
 
-    },    
+    },
+    format : []
 };
 
 

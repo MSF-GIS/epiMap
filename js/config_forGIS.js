@@ -1,3 +1,4 @@
+
 (function(){
 	var globalParameters = {
 			map : {
@@ -124,8 +125,8 @@
 		                name    : "Districts",
 		                // source (STRING) - Source of the layer's data.
 		                source  : "data/yem_adm2.json",
-		                // format (STRING) - Set the format of the dataset.
-		                format  : "",
+		                // format (STRING) - Set the format of the dataset. Can be either "TopoJSON", "GeoJSON" or "EsriJSON".
+		                format  : "TopoJSON",
 		                // geoCode (STRING) - Joined field ('p' code).
 		                geoCode : "admin2Pcod",
 		                // geoName (STRING) - Matching names for labels.
@@ -137,7 +138,7 @@
 		                // source (STRING) - Source of the layer's data.
 		                source  : "data/yem_centroids_adm2.json",
 		                // format (STRING) - Set the format of the dataset.
-		                format  : "",
+		                format  : "TopoJSON",
 		                // geoCode (STRING) - Joined field ('p' code).
 		                geoCode : "admin2Pcod",
 		                // geoName (STRING) - Matching names for labels.
@@ -188,7 +189,7 @@
 	                // source (STRING) - Source of the layer's data.
 	                source  : "data/yem_adm1.json",
 	                // format (STRING) - Set the format of the dataset.
-	                format : "TopoJson",
+	                format  : "TopoJSON",
 	                // style - Set the style of the layer.
 	                style   : {
 	                	// fillColor (STRING) - RGBA string that contains the fill color for the polygons. 

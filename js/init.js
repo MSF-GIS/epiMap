@@ -180,10 +180,7 @@ if (configFile.layout.mapSettings) {
        $("#tSLabel").toggleClass('toggleSettingsSpanClose toggleSettingsSpanOpen');
     });    
 }
-//if (configFile.layout.displayAppDisclaimer) {
-//    $("#inAppDisclaimer").html('<i>' + configFile.layout.appDisclaimer + '</i>');
-//    $("#inAppDisclaimerRow").show();
-//};
+
 
 
 

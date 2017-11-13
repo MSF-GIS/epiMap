@@ -73,8 +73,6 @@ function resetMap(){
     map.getView().setZoom(configFile.mapViewInit.zoomLevel);
     map.getView().setCenter(ol.proj.fromLonLat([configFile.mapViewInit.center.x, configFile.mapViewInit.center.y]));
 }
-
-var GeoJsonFormat = new ol.format.GeoJSON();
-var TopoJsonFormat = new ol.format.TopoJSON();
-var EsriJsonFormat = new ol.format.EsriJSON();
     
+
+
