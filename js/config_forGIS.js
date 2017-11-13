@@ -220,6 +220,14 @@
 		        selectionDescription : "<i>Select an administrative area using the drop-down list below or by clicking on the map.</i>",
 		        // selectionDefault - Define default text for selector (displayed when no features are selected).
 		        selectionDefault : "Select an administrative area...",
+		        
+		        // THE THREE ATTRIBUTES BELOW ARE NOT IMPLEMENTED YET
+		        // appDisclaimer (STRING) - Write a disclaimer
+		        appDisclaimer : "This page displays incomplete data for educationnal purposes only",
+		        // displayAppDisclaimer (BOOLEAN) - Hide or show app disclaimer.
+		        displayAppDisclaimer : true,
+		        // mapSettings (BOOLEAN) - Hide or show map settings.
+		        mapSettings : true		        
 		    },
 		    // Define legend display parameters.
 	        legendParam : {
@@ -279,12 +287,12 @@
 	configFile.data.analysisLayer.epiDataset = globalParameters.data.epiDataset;
 	configFile.data.otherLayers = globalParameters.context;
 	configFile.layout = globalParameters.layout;
-	configFile.analysisFunctions.style.circles = globalParameters.analysis.casesStyle;
+	configFile.analysisFunctions.style.circles = globalParameters.analysis.cases;
 	configFile.analysisFunctions.style.outline = globalParameters.analysis.polygonsStyle.outline;
 	configFile.analysisFunctions.style.colors = globalParameters.analysis.polygonsStyle.colors;
 	configFile.analysisFunctions.style.colors.glob = {};
 	configFile.analysisFunctions.types.rates = globalParameters.analysis.rates;
-	configFile.analysisFunctions.types.cases = globalParameters.analysis.cases;
+	configFile.analysisFunctions.style.circles = globalParameters.analysis.cases;
 	configFile.analysisFunctions.legendParam = globalParameters.legendParam;
-	configFile.analysisFunctions.chartLayout = globalParameters.chartsLayout;
+	configFile.analysisFunctions.chartsLayout = globalParameters.chartsLayout;
 })();

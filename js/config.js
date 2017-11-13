@@ -520,6 +520,7 @@ var configFile = {
             g.z = m.zoomLevel;
             g.f = configFile.data.analysisLayer.epiDataset.fieldsForAnalysis.defaultTime;
             g.t = c.style.colors.transparency;
+            console.log(c)
             $.each(a.rates, function(k, v){
                 p[k] = {};
                 p[k].cS = [c.style.circles[k].minArea, c.style.circles[k].maxArea];
