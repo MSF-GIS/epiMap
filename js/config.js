@@ -375,7 +375,7 @@ var configFile = {
             var htmlStr = '<rect fill="' + col.class0 + '" x="1" y="10" width="' + rW + '" height="' + rH + '" stroke="' + sC + '" stroke-width="' + sW + '"/>';
                 htmlStr += '<text x="' + (rW + hG) + '" y="' + (10 + lT) + '" style="fill:' + lC + ';font-size:' + lS + 'px;">No data</text>';
             var sumV = (rH + vG);
-            $.each(this[analysis], function(k, v){
+            $.each(this.types.rates[analysis].classes, function(k, v){
                 var op = k.substring(6, k.length);
                 var cl = k.substring(0, 6);
                 var val = "";
