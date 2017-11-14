@@ -1,3 +1,7 @@
+/* Configuration file - epiMap
+ * Change the webmap' settings here, accordingly with the associated comments (lines starting with "//").
+ * Please keep in mind that parameters are case-sensitives.
+ */
 
 (function(){
 	var globalParameters = {
