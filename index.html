@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    
+<html>   
     <head>
         <title>Webmap EPI</title>
         <meta charset="UTF-8">
@@ -13,12 +7,11 @@ and open the template in the editor.
         <link rel="icon" type="image/ico" href="img/favicon.ico"/>
         <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="dist/OpenLayers/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css"/>
-        <link href="css/ol_custom.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/dc.css" rel="stylesheet" type="text/css"/>
-        <link href="css/sumoselect.css" rel="stylesheet" type="text/css"/>
-        <link href="css/nouislider.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/jquery.minicolors.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ol-changes.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/dc/dc.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/sumoselect/sumoselect.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/nouislider/nouislider.min.css" rel="stylesheet" type="text/css"/>
+        <link href="dist/minicolors/jquery.minicolors.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-changes.css" rel="stylesheet" type="text/css"/>
         <link href="css/site.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -74,16 +67,15 @@ and open the template in the editor.
                                                             <span id="selectWeek_value" class="noselect" style="float:right;font-size:9pt;color:rgba(120,120,120,1);font-weight:700;"></span>				
                                                         </div>
                                                         <br>
-                                                        <div class="row" style="padding-left:15px;">
-                                                            <div id="pieChartAnchor" class="chartAnchor"></div>								
+                                                        <div class="row" style="padding-left:15px;">						
                                                             <div class="col-md-1">
-                                                                <span><i class="fa fa-arrow-circle-left slider_move" data-slider="selectWeek"></i></span>
+                                                                <span><i class="glyphicon glyphicon-circle-arrow-left slider_move" data-slider="selectWeek"></i></span>
                                                             </div>
                                                             <div class="col-md-10">
                                                                 <div id="selectWeek"></div>
                                                             </div>
                                                             <div class="col-md-1">
-                                                                <span><i class="fa fa-arrow-circle-right slider_move" data-slider="selectWeek"></i></span>
+                                                                <span><i class="glyphicon glyphicon-circle-arrow-right slider_move" data-slider="selectWeek"></i></span>
                                                             </div>                                                               
                                                         </div>
                                                         <br>
@@ -126,7 +118,7 @@ and open the template in the editor.
                                         <div id="legendContent"></div>	
                                     </div>
                                     <div id="forExport" class="col-md-2" style="float:left; top:10px;" hidden>
-                                        <button id="export-pdf" class="btn btn-default">Export PDF</button>							
+                                        <button id="export-pdf" class="btn btn-default"><span class="glyphicon glyphicon-file" style="color:grey"></span> Export PDF</button>							
                                     </div>
                             </div>
                             <div class="row">
@@ -194,30 +186,30 @@ and open the template in the editor.
 </div>
 	</div>
 	<div class="modal fade" style="opacity:1;background-color:white;" id="modalTable" role="dialog"  tabindex="-1">
-	  <div id="modal-dialog-table" class="modal-dialog">
-		  <div id="modal-body-table">
-                      <div class="row"><div class="col-md-12" style="text-align:center"><h2>Getting your document ready...</h2></div></div>
-                  </div>				  
+	  <div id="modalMask-dialog-table" class="modal-dialog">
+		  <div id="modalMask-body-table">
+              <div class="row"><div class="col-md-12" style="text-align:center"><h2>Getting your document ready...</h2></div></div>
+          </div>				  
 	  </div>
 	</div>
         <div id="pxMmTest" style="height:1mm;display:none"></div>
     </body>
     <script src="js/config.js" type="text/javascript"></script>
     <script src="js/config_forGIS.js" type="text/javascript"></script>
-    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
-    <script src="js/nouislider.min.js" type="text/javascript"></script>
-    <script src="js/jquery.sumoselect.min.js" type="text/javascript"></script>
-    <script src="js/jquery.minicolors.min.js" type="text/javascript"></script>
+    <script src="libs/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="dist/nouislider/nouislider.min.js" type="text/javascript"></script>
+    <script src="dist/sumoselect/jquery.sumoselect.min.js" type="text/javascript"></script>
+    <script src="dist/minicolors/jquery.minicolors.min.js" type="text/javascript"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="dist/OpenLayers/v4.4.1-dist/ol.js" type="text/javascript"></script>
-    <script src="js/moment.js" type="text/javascript"></script>
-    <script src="js/jspdf.min.js" type="text/javascript"></script>
-    <script src="js/canvg.min.js" type="text/javascript"></script>
-    <script src="js/d3.v3.min.js" type="text/javascript"></script>
-    <script src="js/crossfilter.js" type="text/javascript"></script>
-    <script src="js/dc.js" type="text/javascript"></script>
+    <script src="libs/moment.min.js" type="text/javascript"></script>
+    <script src="libs/jspdf.min.js" type="text/javascript"></script>
+    <script src="libs/canvg.min.js" type="text/javascript"></script>
+    <script src="libs/d3.v3.min.js" type="text/javascript"></script>
+    <script src="libs/crossfilter.min.js" type="text/javascript"></script>
+    <script src="dist/dc/dc.js" type="text/javascript"></script>
     <script src="dist/CartONG_OL3_basemaps/CartONG_OL3_basemaps.js" type="text/javascript"></script>
-    <script src="js/wNumb.js" type="text/javascript"></script>
+    <script src="libs/wNumb.js" type="text/javascript"></script>
     <script src="js/init.js" type="text/javascript"></script>
     <script src="js/map.js" type="text/javascript"></script>
     <script src="js/exportPdf.js" type="text/javascript"></script>    

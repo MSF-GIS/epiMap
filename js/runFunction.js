@@ -663,7 +663,7 @@ map.addOverlay(popup);
         var slider = $('#' + this.dataset.slider)[0].noUiSlider;
         var sliderValue = slider.get();
         if(Array.isArray(sliderValue) === false){
-            if($(this).hasClass('fa-arrow-circle-left') === true){
+            if($(this).hasClass('glyphicon-circle-arrow-left') === true){
                 if(sliderValue > slider.options.range.min){
                     slider.set(parseInt(sliderValue) - 1);							
                 }
@@ -673,7 +673,7 @@ map.addOverlay(popup);
                 }
             }
         } else {
-            if($(this).hasClass('fa-arrow-circle-left') === true){
+            if($(this).hasClass('glyphicon-circle-arrow-right') === true){
                 if(sliderValue[0] > slider.options.range.min){
                     slider.set([parseInt(sliderValue[0]) - 1, parseInt(sliderValue[1]) - 1]);							
                 }

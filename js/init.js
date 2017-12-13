@@ -1,12 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
-/* global configFile */
-
 configFile.paramObject.setup();
 configFile.analysisFunctions.listAnalysis(configFile.analysisFunctions.types.rates);
 var sourceObj = configFile.analysisFunctions.matchAbbAnalysis;
@@ -98,7 +89,7 @@ $("#analysisDescription").html(configFile.layout.analysisDescription).show();
 $("#dimensionDescription").html(configFile.layout.dimensionDescription).show();
 $("#selectionDescription").html(configFile.layout.selectionDescription).show();
 if (configFile.layout.mapSettings) {
-    $("#toggleSettings").html('<div id="tSLabel" class="col-md-2 pull-right toggleSettingsSpanClose"><span><i class="fa fa-cog"></i> Map settings  <i id="caretToggle" class="fa fa-caret-down"></i></span></div>');
+    $("#toggleSettings").html('<div id="tSLabel" class="col-md-2 pull-right toggleSettingsSpanClose"><span><i class="glyphicon glyphicon-cog" style="top:1.5px"></i> Map settings  <i id="caretToggle" class="glyphicon glyphicon-triangle-bottom" style="top:1px;font-size:8px"></i></span></div>');
     $("#toggleSettings").show();
 
     var htmlStr = '<br><div class="row">';
@@ -176,7 +167,7 @@ if (configFile.layout.mapSettings) {
     
     $("#toggleSettings").on('click', function(){
        $("#settingsContainer").toggle(500);
-       $("#caretToggle").toggleClass('fa-caret-down fa-caret-up');
+       $("#caretToggle").toggleClass('glyphicon-triangle-bottom glyphicon-triangle-top');
        $("#tSLabel").toggleClass('toggleSettingsSpanClose toggleSettingsSpanOpen');
     });    
 }

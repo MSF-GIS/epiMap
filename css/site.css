@@ -96,7 +96,10 @@ html, body {
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-	cursor: pointer
+	cursor: pointer;
+    display: block;
+    text-align: center;
+    right:50%;
 }
 .slider_move:hover{
 	color:rgba(209,32,32,1);
@@ -155,7 +158,7 @@ html, body {
 .fade.in {
   opacity: 0;
 }
-#modal-dialog-table {
+#modalMask-dialog-table {
     position:fixed;
     top: 35%;
     width:100%;
