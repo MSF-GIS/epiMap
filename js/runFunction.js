@@ -164,6 +164,11 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
             .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
             .elasticY(true)
             .yAxis().ticks(5);
+            geoSelectedChart_Cumulative.on("renderlet.somename", function(chart) {
+                geoSelectedChart_Cumulative.selectAll('circle').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+            });    
 
     // For given geo feature : Chart for rates based on values (non-cumulative).
     var geoSelectedChart_Measure = dc.lineChart('#geoSAnchorMeasure');
@@ -183,7 +188,12 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
             .brushOn(false)
             .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
             .elasticY(true)
-            .yAxis().ticks(5);	
+            .yAxis().ticks(5);
+            geoSelectedChart_Measure.on("renderlet.somename", function(chart) {
+                geoSelectedChart_Measure.selectAll('circle').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+            });
 
     // For given geo feature : Chart for absolutes values (cumulative and non-cumulative).
     var geoSelectedChart_Combined = dc.compositeChart("#geoSAnchorCombined");
@@ -217,6 +227,14 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
             .xAxisLabel(configFile.layout.dimensionIndicator)
             .yAxis().ticks(5).tickFormat(d3.format("d"));
             geoSelectedChart_Combined.rightYAxis().ticks(5);
+            geoSelectedChart_Combined.on("renderlet.somename", function(chart) {
+                geoSelectedChart_Combined.selectAll('rect').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+                geoSelectedChart_Combined.selectAll('circle').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+            });
 
     // For all geo features : Chart for absolutes values (cumulative and non-cumulative).
     var geoAllChart_Combined = dc.compositeChart("#geoAllAnchorCombined");
@@ -250,6 +268,14 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
             .xAxisLabel(configFile.layout.dimensionIndicator)
             .yAxis().ticks(5);
             geoAllChart_Combined.rightYAxis().ticks(5);
+            geoAllChart_Combined.on("renderlet.somename", function(chart) {
+                geoAllChart_Combined.selectAll('rect').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+                geoAllChart_Combined.selectAll('circle').on("click", function(d) {
+                    sliderWeek.noUiSlider.set(d.data.key);
+                });
+            });
             
 /////////////	ANALYSIS - start
 // 

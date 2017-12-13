@@ -1,199 +1,190 @@
 <!DOCTYPE html>
-<html>   
-    <head>
-        <title>Webmap EPI</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
-        <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/OpenLayers/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css"/>
-        <link href="css/ol-changes.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/dc/dc.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/sumoselect/sumoselect.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/nouislider/nouislider.min.css" rel="stylesheet" type="text/css"/>
-        <link href="dist/minicolors/jquery.minicolors.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap-changes.css" rel="stylesheet" type="text/css"/>
-        <link href="css/site.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div>	
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div style="padding-left:0px">
-                            <h2 id="inAppTitle" hidden>TITLE - Subtitle</h2>
-                        </div>
-                        <div id="inAppDisclaimerRow" class="row" style="float:right;color:#d12121" hidden>
-                            <div id="inAppDisclaimer"></div>
-                            <br>
-                        </div>
-                            <div>	
-                                <div class="row" style="padding:0px;">
-                                    <div class="col-md-4" style="padding:0px;">
-                                        <div id="container" hidden>
+<html>
+
+<head>
+    <title>Webmap EPI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/OpenLayers/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css" />
+    <link href="css/ol-changes.css" rel="stylesheet" type="text/css" />
+    <link href="dist/dc/dc.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/sumoselect/sumoselect.css" rel="stylesheet" type="text/css" />
+    <link href="dist/nouislider/nouislider.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/minicolors/jquery.minicolors.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-changes.css" rel="stylesheet" type="text/css" />
+    <link href="css/site.css" rel="stylesheet" type="text/css" /> </head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div style="padding-left:0px">
+                        <h2 id="inAppTitle" hidden>TITLE - Subtitle</h2>
+                    </div>
+                    <div id="inAppDisclaimerRow" class="row" style="float:right;color:#d12121" hidden>
+                        <div id="inAppDisclaimer"></div>
+                        <br> 
+                    </div>
+                    <div>
+                        <div class="row" style="padding:0px;">
+                            <div class="col-md-4" style="padding:0px;">
+                                <div id="container" hidden>
+                                    <br>
+                                    <div class="row" style="float:right" hidden>
+                                        <div class="col-md-12">
+                                            <div id="data-count"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="analysisSectionTitle" class="row" style="padding-left:15px;" hidden> <strong>Analysis title</strong> </div>
+                                            <div class="row" style="padding-left:15px;"> <span id="analysisDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Analysis description</span> </div>
                                             <br>
-                                                <div class="row" style="float:right" hidden>
-                                                    <div class="col-md-12" >
-                                                        <div id="data-count"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" >
-                                                        <div id="analysisSectionTitle" class="row" style="padding-left:15px;" hidden>
-                                                            <strong>Analysis title</strong>
-                                                        </div>
-                                                        <div class="row" style="padding-left:15px;">
-                                                            <span id="analysisDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Analysis description</span>
-                                                        </div>												
-                                                        <br>
-                                                        <div class="row" style="padding-left:15px;">
-                                                            <select id="selectorAnalysis"></select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <br>
-                                                <div class="row">
-                                                    <div class="col-md-12" >
-                                                        <div id="dimensionTitle" class="row" style="padding-left:15px;" hidden>
-                                                            <strong>Dimension title</strong>																				
-                                                        </div>
-                                                        <div class="row" style="padding-left:15px;">
-                                                            <span id="dimensionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Dimension description</span>
-                                                            <br>
-                                                            <br>
-                                                        </div>
-                                                        <div class="row" style="padding-left:15px;">											
-                                                            <span id="selectWeek_value" class="noselect" style="float:right;font-size:9pt;color:rgba(120,120,120,1);font-weight:700;"></span>				
-                                                        </div>
-                                                        <br>
-                                                        <div class="row" style="padding-left:15px;">						
-                                                            <div class="col-md-1">
-                                                                <span><i class="glyphicon glyphicon-circle-arrow-left slider_move" data-slider="selectWeek"></i></span>
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div id="selectWeek"></div>
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                                <span><i class="glyphicon glyphicon-circle-arrow-right slider_move" data-slider="selectWeek"></i></span>
-                                                            </div>                                                               
-                                                        </div>
-                                                        <br>
-                                                        <br>
-                                                    </div>															
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" >
-                                                        <div id="selectionTitle" class="row" style="padding-left:15px;" hidden>
-                                                            <strong>Feature selection</strong>
-                                                        </div>
-                                                        <div class="row" style="padding-left:15px;">
-                                                            <span id="selectionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Selection description</span>
-                                                        </div>										
-                                                        <br>
-                                                        <div class="row" style="padding-left:0px;">
-                                                            <div class="col-md-8">
-                                                                <select id="selectorAdmin"></select>											
-                                                            </div>
-                                                            <div class="col-md-4" style="padding-left:15px;float:right;">
-                                                                <div id="infoAdmin"></div>													
-                                                            </div>										
-                                                        </div>										
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>	
-                                    <div id="map_container" class="col-md-6" style="height:inherit;padding-left:0px;">
-                                        <div id="map">
-                                            <div id="popup" class="ol-popup">
-                                                <span style="float:right;padding-top:5px;"><i class="fa fa-window-close noselect popupClose"></i></span>
-                                                <div id="popup-content"></div>
+                                            <div class="row" style="padding-left:15px;">
+                                                <select id="selectorAnalysis"></select>
                                             </div>
                                         </div>
-                                        <div id="toggleSettings" class="noselect" hidden></div>
-                                        <br>							
                                     </div>
-                                    <div id="sideLegend" class="col-md-2" hidden>
-                                        <span class="noselect" style="font-size:14pt;font-weight:700;float:center;color:#d12121">Legend</span>
-                                        <div id="legendContent"></div>	
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="dimensionTitle" class="row" style="padding-left:15px;" hidden> 
+                                                <strong>Dimension title</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;"> <span id="dimensionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Dimension description</span>
+                                                <br>
+                                                <br>
+                                            </div>
+                                            <div class="row" style="padding-left:15px;"> <span id="selectWeek_value" class="noselect" style="float:right;font-size:9pt;color:rgba(120,120,120,1);font-weight:700;"></span> </div>
+                                            <br>
+                                            <div class="row" style="padding-left:15px;">
+                                                <div class="col-md-1"> <span><i class="glyphicon glyphicon-circle-arrow-left slider_move" data-slider="selectWeek"></i></span> </div>
+                                                <div class="col-md-10">
+                                                    <div id="selectWeek"></div>
+                                                </div>
+                                                <div class="col-md-1"> <span><i class="glyphicon glyphicon-circle-arrow-right slider_move" data-slider="selectWeek"></i></span> </div>
+                                            </div>
+                                            <br>
+                                            <br> 
+                                        </div>
                                     </div>
-                                    <div id="forExport" class="col-md-2" style="float:left; top:10px;" hidden>
-                                        <button id="export-pdf" class="btn btn-default"><span class="glyphicon glyphicon-file" style="color:grey"></span> Export PDF</button>							
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="selectionTitle" class="row" style="padding-left:15px;" hidden> 
+                                                <strong>Feature selection</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;"> <span id="selectionDescription" style="font-size:9pt;color:rgba(120,120,120,1);" hidden>Selection description</span> </div>
+                                            <br>
+                                            <div class="row" style="padding-left:0px;">
+                                                <div class="col-md-8">
+                                                    <select id="selectorAdmin"></select>
+                                                </div>
+                                                <div class="col-md-4" style="padding-left:15px;float:right;">
+                                                    <div id="infoAdmin"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                            </div>
-                            <div class="row">
-                                <div id="mapSettings" class="row" >
-                                    <div class="col-md-4"></div>
-                                    <div id="settingsContainer" class="col-md-6" hidden></div>
-                                    <div class="col-md-2"></div>
                                 </div>
-                                    <div id="adminRow" class="row" hidden>
-                                        <br>
-                                            <div class="row">
-                                                    <div id="weeklyChart_AR" class="col-md-4">								
-                                                            <div class="col-md-12">
-                                                                    <div id="weeklyChartTitle_AR" class="row" style="padding-left:15px;">
-                                                                            <strong>Title</strong>
-                                                                    </div>
-                                                                    <div class="row" style="padding-left:15px;">
-                                                                            <div id="geoSAnchorCumulative" class="chartAnchor"></div>
-                                                                    </div>
-                                                            </div>								
-                                                    </div>								
-                                                    <div id="weeklyChart" class="col-md-4">								
-                                                            <div class="col-md-12">
-                                                                    <div id="weeklyChartTitle" class="row" style="padding-left:15px;">
-                                                                            <strong>Title</strong>
-                                                                    </div>
-                                                                    <div class="row" style="padding-left:15px;">
-                                                                            <div id="geoSAnchorCombined" class="chartAnchor"></div>
-                                                                    </div>
-                                                            </div>								
-                                                    </div>
-                                                    <div id="weeklyChart_WIR" class="col-md-4">								
-                                                            <div class="col-md-12">
-                                                                    <div id="weeklyChartTitle_WIR" class="row" style="padding-left:15px;">
-                                                                            <strong>Title</strong>
-                                                                    </div>
-                                                                    <div class="row" style="padding-left:15px;">
-                                                                            <div id="geoSAnchorMeasure" class="chartAnchor"></div>
-                                                                    </div>
-                                                            </div>								
-                                                    </div>
-                                            </div>
-                                    </div>
-                                    <div id="overallRow" class="row">
-                                        <br>
-                                            <div class="col-md-4">
-                                            </div>
-                                            <div class="col-md-4">
-                                                    <div class="col-md-12">
-                                                            <div class="row" style="padding-left:15px;">
-                                                                    <strong>Overall - Cases</strong>
-                                                            </div>
-                                                            <div class="row" style="padding-left:15px;">
-                                                                    <div id="geoAllAnchorCombined" class="chartAnchor"></div>
-                                                            </div>
-                                                    </div>								
-                                            </div>
-                                            <div class="col-md-4">
-                                            </div>								
-                                    </div>							
                             </div>
-                    </div>				
-            </div>	
+                            <div id="map_container" class="col-md-6" style="height:inherit;padding-left:0px;">
+                                <div id="map">
+                                    <div id="popup" class="ol-popup"> <span style="float:right;padding-top:5px;"><i class="fa fa-window-close noselect popupClose"></i></span>
+                                        <div id="popup-content"></div>
+                                    </div>
+                                </div>
+                                <div id="toggleSettings" class="noselect" hidden></div>
+                                <br> </div>
+                            <div id="sideLegend" class="col-md-2" hidden> <span class="noselect" style="font-size:14pt;font-weight:700;float:center;color:#d12121">Legend</span>
+                                <div id="legendContent"></div>
+                            </div>
+                            <div id="forExport" class="col-md-2" style="float:left; top:10px;" hidden>
+                                <button id="export-pdf" class="btn btn-default"><span class="glyphicon glyphicon-file" style="color:grey"></span> Export PDF</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="mapSettings" class="row">
+                                <div class="col-md-4"></div>
+                                <div id="settingsContainer" class="col-md-6" hidden></div>
+                                <div class="col-md-2"></div>
+                            </div>
+                            <div id="adminRow" class="row" hidden>
+                                <br>
+                                <div class="row">
+                                    <div id="weeklyChart_AR" class="col-md-4">
+                                        <div class="col-md-12">
+                                            <div id="weeklyChartTitle_AR" class="row" style="padding-left:15px;"> 
+                                                <strong>Title</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;">
+                                                <div id="geoSAnchorCumulative" class="chartAnchor"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="weeklyChart" class="col-md-4">
+                                        <div class="col-md-12">
+                                            <div id="weeklyChartTitle" class="row" style="padding-left:15px;"> 
+                                                <strong>Title</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;">
+                                                <div id="geoSAnchorCombined" class="chartAnchor"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="weeklyChart_WIR" class="col-md-4">
+                                        <div class="col-md-12">
+                                            <div id="weeklyChartTitle_WIR" class="row" style="padding-left:15px;"> 
+                                                <strong>Title</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;">
+                                                <div id="geoSAnchorMeasure" class="chartAnchor"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="overallRow" class="row" hidden>
+                                <br>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <div class="row" style="padding-left:15px;">
+                                            <strong>Overall - Cases</strong> 
+                                        </div>
+                                        <div class="row" style="padding-left:15px;">
+                                            <div id="geoAllAnchorCombined" class="chartAnchor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-	</div>
-	<div class="modal fade" style="opacity:1;background-color:white;" id="modalTable" role="dialog"  tabindex="-1">
-	  <div id="modalMask-dialog-table" class="modal-dialog">
-		  <div id="modalMask-body-table">
-              <div class="row"><div class="col-md-12" style="text-align:center"><h2>Getting your document ready...</h2></div></div>
-          </div>				  
-	  </div>
-	</div>
-        <div id="pxMmTest" style="height:1mm;display:none"></div>
-    </body>
+    
+    <!-- modalMask : Used to hide the page while resizing elements for exportPDF -->
+    <div class="modal fade" style="opacity:1;background-color:white;" id="modalTable" role="dialog" tabindex="-1">
+        <div id="modalMask-dialog-table" class="modal-dialog">
+            <div id="modalMask-body-table">
+                <div class="row">
+                    <div class="col-md-12" style="text-align:center">
+                        <h2>Getting your document ready...</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- pxMmTest : Can be useful for exportPDF -->
+    <div id="pxMmTest" style="height:1mm;display:none"></div>
+    
     <script src="js/config.js" type="text/javascript"></script>
     <script src="js/config_forGIS.js" type="text/javascript"></script>
     <script src="libs/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -207,14 +198,14 @@
     <script src="libs/canvg.min.js" type="text/javascript"></script>
     <script src="libs/d3.v3.min.js" type="text/javascript"></script>
     <script src="libs/crossfilter.min.js" type="text/javascript"></script>
-    <script src="dist/dc/dc.js" type="text/javascript"></script>
+    <script src="dist/dc/dc.min.js" type="text/javascript"></script>
     <script src="dist/CartONG_OL3_basemaps/CartONG_OL3_basemaps.js" type="text/javascript"></script>
     <script src="libs/wNumb.js" type="text/javascript"></script>
     <script src="js/init.js" type="text/javascript"></script>
     <script src="js/map.js" type="text/javascript"></script>
-    <script src="js/exportPdf.js" type="text/javascript"></script>    
-    <script src="js/runFunction.js" type="text/javascript"></script>    
+    <script src="js/exportPdf.js" type="text/javascript"></script>
+    <script src="js/runFunction.js" type="text/javascript"></script>
     <script src="js/site.js" type="text/javascript"></script>
+</body>
 
-    
 </html>
