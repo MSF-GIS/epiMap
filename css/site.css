@@ -55,7 +55,6 @@ h2{
 	border: 1px solid rgba(68, 68, 68, 0.4);
 	bottom: 22px;
 	left: -50px;
-/*	z-index: 999;*/
 }
 .popupClose{
 	color:rgba(175, 175, 175, 1);
@@ -84,6 +83,12 @@ h2{
 #basemaps{
 	float:right;
 }
+.chartBlock{
+    display: inline-block;
+}
+div .dc-chart{
+    float:none;
+}
 .dc-chart g.row text {
     fill: black;
 }
@@ -106,7 +111,6 @@ h2{
 	cursor: pointer;
     display: block;
     text-align: center;
-    right:50%;
 }
 .slider_move:hover{
 	color:rgba(209,32,32,1);

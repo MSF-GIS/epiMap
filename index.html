@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="img/favicon.ico" />
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="dist/OpenLayers/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css" />
+    <link href="dist/ol/v4.4.1-dist/ol.css" rel="stylesheet" type="text/css" />
     <link href="css/ol-changes.css" rel="stylesheet" type="text/css" />
     <link href="dist/dc/dc.min.css" rel="stylesheet" type="text/css" />
     <link href="dist/sumoselect/sumoselect.css" rel="stylesheet" type="text/css" />
     <link href="dist/nouislider/nouislider.min.css" rel="stylesheet" type="text/css" />
     <link href="dist/minicolors/jquery.minicolors.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-changes.css" rel="stylesheet" type="text/css" />
-    <link href="css/site.css" rel="stylesheet" type="text/css" /> </head>
+    <link href="css/site.css" rel="stylesheet" type="text/css" /> 
+</head>
 
 <body>
     <div>
@@ -117,32 +118,38 @@
                                 <br>
                                 <div class="row">
                                     <div id="weeklyChart_AR" class="col-md-4">
-                                        <div class="col-md-12">
-                                            <div id="weeklyChartTitle_AR" class="row" style="padding-left:15px;"> 
-                                                <strong>Title</strong> 
-                                            </div>
-                                            <div class="row" style="padding-left:15px;">
-                                                <div id="geoSAnchorCumulative" class="chartAnchor"></div>
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <div class="chartBlock">
+                                                <div id="weeklyChartTitle_AR" class="row" style="padding-left:15px;float:left;"> 
+                                                    <strong>Title</strong> 
+                                                </div>
+                                                <div class="row" style="padding-left:15px;">
+                                                    <div id="geoSAnchorCumulative" class="chartAnchor"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="weeklyChart" class="col-md-4">
-                                        <div class="col-md-12">
-                                            <div id="weeklyChartTitle" class="row" style="padding-left:15px;"> 
-                                                <strong>Title</strong> 
-                                            </div>
-                                            <div class="row" style="padding-left:15px;">
-                                                <div id="geoSAnchorCombined" class="chartAnchor"></div>
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <div class="chartBlock">
+                                                <div id="weeklyChartTitle" class="row" style="padding-left:15px;float:left;"> 
+                                                    <strong>Title</strong> 
+                                                </div>
+                                                <div class="row" style="padding-left:15px;float: none; margin: 0 auto;">
+                                                    <div id="geoSAnchorCombined" class="chartAnchor"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="weeklyChart_WIR" class="col-md-4">
-                                        <div class="col-md-12">
-                                            <div id="weeklyChartTitle_WIR" class="row" style="padding-left:15px;"> 
-                                                <strong>Title</strong> 
-                                            </div>
-                                            <div class="row" style="padding-left:15px;">
-                                                <div id="geoSAnchorMeasure" class="chartAnchor"></div>
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <div class="chartBlock">
+                                                <div id="weeklyChartTitle_WIR" class="row" style="padding-left:15px;float:left;"> 
+                                                    <strong>Title</strong> 
+                                                </div>
+                                                <div class="row" style="padding-left:15px;">
+                                                    <div id="geoSAnchorMeasure" class="chartAnchor"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -152,12 +159,14 @@
                                 <br>
                                 <div class="col-md-4"></div>
                                 <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <div class="row" style="padding-left:15px;">
-                                            <strong>Overall - Cases</strong> 
-                                        </div>
-                                        <div class="row" style="padding-left:15px;">
-                                            <div id="geoAllAnchorCombined" class="chartAnchor"></div>
+                                    <div class="col-md-12" style="text-align: center;">
+                                        <div class="chartBlock">
+                                            <div class="row" style="padding-left:15px;float:left;">
+                                                <strong>Overall - Cases</strong> 
+                                            </div>
+                                            <div class="row" style="padding-left:15px;">
+                                                <div id="geoAllAnchorCombined" class="chartAnchor"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +202,7 @@
     <script src="dist/sumoselect/jquery.sumoselect.min.js" type="text/javascript"></script>
     <script src="dist/minicolors/jquery.minicolors.min.js" type="text/javascript"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="dist/OpenLayers/v4.4.1-dist/ol.js" type="text/javascript"></script>
+    <script src="dist/ol/v4.4.1-dist/ol.js" type="text/javascript"></script>
     <script src="libs/moment.min.js" type="text/javascript"></script>
     <script src="libs/jspdf.min.js" type="text/javascript"></script>
     <script src="libs/canvg.min.js" type="text/javascript"></script>
