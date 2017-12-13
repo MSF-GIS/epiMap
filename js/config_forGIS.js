@@ -122,7 +122,7 @@
 	                    minArea : 5,
 	                    maxArea : 5000
 	                }				
-				},
+				},            
 				geoSources : {
 					polygons : {
 						// name (STRING) - Name of the layer as it is going to be displayed in the legend.
@@ -169,7 +169,7 @@
 				// Define options for the cases analysis.
 	            casesStyle : {
 	            	// titleForLegend (STRING) - Name of the layer as it is going to be displayed in the legend.
-	                titleForLegend : "Cases (by districts)",
+	                titleForLegend : "Cases TEST TEST (by districts)",
 	                // fill (color : STRING) - RGBA string that contains the fill color for the circles.
 	                fill : {
 	                    color : "rgba(200,0,0,0.3)"

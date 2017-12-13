@@ -1,10 +1,6 @@
-
-/* global configFile, ol, d3, Infinity, dc, noUiSlider, moment, analysisType, analysisAbsoluteField, analysisField */
-
 var geometryFile = configFile.data.analysisLayer.geometry;
 var datasetFile  = configFile.data.analysisLayer.epiDataset.fieldsForAnalysis;
 
-console.log(geometryFile);
 // Draw layers listed in the 'otherLayers' config object.
 $.each(configFile.data.otherLayers, function(i, v){
     if (v.display) {
@@ -25,7 +21,6 @@ $.each(configFile.data.otherLayers, function(i, v){
                 zIndex : 1
             });	
             var formatOthers = v.format;
-            console.log(formatOthers)
             if(configFile.format.indexOf(formatOthers) === -1){
             	window[formatOthers] = new ol.format[formatOthers];
             	configFile.format.push(formatOthers);
