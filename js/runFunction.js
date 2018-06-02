@@ -1,5 +1,5 @@
 function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
-	
+	console.log('function')
 	var data3;
 	if (remote){
 		data3 = dsv.parse(epiData);
