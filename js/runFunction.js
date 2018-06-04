@@ -338,6 +338,9 @@ function displayAnalysis(analysis){
         if (geoPoints) {
             $('#legendContent').append(configFile.analysisFunctions.drawLegendCases(analysisType));
         }
+        if (geoPoints && !geoPolygons) {
+            $('#legendContent').html(configFile.analysisFunctions.drawLegendCases(analysisType));
+        }
         $('#legendContent').append(configFile.analysisFunctions.drawLegendOthers());
         $('#selectorAnalysis')[0].dataset.param = configFile.paramObject.paramString.legend;
     }

@@ -124,6 +124,7 @@
 	                }				
 				},            
 				geoSources : {
+					// Insert only geometry sources with the CRS 3857
 					polygons : {
 						// display (BOOLEAN) - Choose to display the layer or not.
 						display: true,
@@ -137,7 +138,8 @@
 		                geoCode : "admin2Pcod",
 		                // geoName (STRING) - Matching names for labels.
 		                geoName : "admin2Name"
-		            },
+					},
+					// Insert only geometry sources with the CRS 3857
 					points : {
 						// display (BOOLEAN) - Choose to display the layer or not.
 						display: true,						
@@ -180,7 +182,7 @@
 	                },
 	                // stroke - Set the display of the circles' outlines.
 	                stroke : {
-	                	// color (STRING) - RGBA string that contains the fill color for the polygons. 
+	                	// color (STRING) - RGBA string that contains the fill color for the circles' outlines. 
 	                    color : "rgba(0,0,0,1)",
 	                    // width (REAL) - Defines the width of circles' outlines.
 	                    width : 1
