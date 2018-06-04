@@ -6,7 +6,7 @@
 
 
 
-function setExportPdf(){
+function setExportPdf(config){
 
     function pxToMm(px){
         return Math.floor(px/$('#pxMmTest').height());
@@ -91,14 +91,15 @@ This map has been exported from MSF Map Centre on personal initiative. MSF GIS U
                 // Y start ref
                 var yStartRef = 31;
 
-                // Legend 1 (rates)                    
-                doc.setFontSize(9).setFontStyle('italic').setTextColor(0,0,0);
-                var forLegendDesc = $("#selectorAnalysis").val() === configFile.analysisFunctions.types.rates.analysis_1.config.abbreviation ? configFile.analysisFunctions.types.rates.analysis_1.config.printName : configFile.analysisFunctions.types.rates.analysis_2.config.printName;
-                doc.text(245, 30, forLegendDesc);
-                PDFaddSvgBloc("legendRates", yStartRef);
+                // Legend 1 (rates)
+                if (config.rates && config.cumulRates) {                  
+                    doc.setFontSize(9).setFontStyle('italic').setTextColor(0,0,0);
+                    var forLegendDesc = $("#selectorAnalysis").val() === configFile.analysisFunctions.types.rates.analysis_1.config.abbreviation ? configFile.analysisFunctions.types.rates.analysis_1.config.printName : configFile.analysisFunctions.types.rates.analysis_2.config.printName;
+                    doc.text(245, 30, forLegendDesc);
+                    PDFaddSvgBloc("legendRates", yStartRef);
 
-                yStartRef += pxToMm(parseFloat($('#legendRates').css('height').split("p")[0])) + 5;
-
+                    yStartRef += pxToMm(parseFloat($('#legendRates').css('height').split("p")[0])) + 5;
+                }
                 // Legend 2 (cases)
                 doc.setFontSize(9).setFontStyle('italic').setTextColor(0,0,0);
                 doc.text(245, yStartRef, configFile.analysisFunctions.types.cases.titleForLegend);                    

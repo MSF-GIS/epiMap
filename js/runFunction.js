@@ -771,7 +771,7 @@ map.addOverlay(popup);
 
 //////////////// EXPORT - PDF
 
-setExportPdf();
+setExportPdf(config);
 
     var sliderTransparency = $('#transparencySlider')[0];
     noUiSlider.create(sliderTransparency, {
