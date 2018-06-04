@@ -12,6 +12,8 @@ var configFile = {
     data : {
         analysisLayer : {
             geometry : {
+                // display (BOOLEAN) - Choose to display the layer or not.
+                display: true,                
                 name    : "Districts",                
                 source  : "data/yem_adm2.json",
                 // format (STRING) - Set the format of the dataset. Can be either "TopoJSON", "GeoJSON" or "EsriJSON".
@@ -22,6 +24,8 @@ var configFile = {
                 geoName : "admin2Name"
             },
             geometryPoints : {
+                // display (BOOLEAN) - Choose to display the layer or not.
+                display: true,                
                 name    : "Districts",                
                 source  : "data/yem_centroids_adm2.json",
                 // format (STRING) - Set the format of the dataset. Can be either "TopoJSON", "GeoJSON" or "EsriJSON".

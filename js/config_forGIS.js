@@ -25,11 +25,11 @@
 					// delimiter (STRING) - Defines the delimiter used in the dataset.
 					delimiter : ",",
 	                // remote (BOOLEAN) -  To be set as 'true' for online use. Set as 'false' to avoid CORS issues on local use.
-	                remote : true,					
+	                remote : false,					
 					// XMLHttpRequestHeader (header, value : STRING) - Set the request header for password-protected remote sources - Leave blank for local sources.
 	                XMLHttpRequestHeader : {
 	                    header : "Authorization",
-	                    value  : "253719af-9259-40f5-a003-6f0de8711c8f"
+	                    value  : "xxx"
 	                },
 	                // fieldsForAnalysis - Defines the fields to be considered from the epi dataset.
 	                fieldsForAnalysis : {                    
@@ -125,6 +125,8 @@
 				},            
 				geoSources : {
 					polygons : {
+						// display (BOOLEAN) - Choose to display the layer or not.
+						display: true,
 						// name (STRING) - Name of the layer as it is going to be displayed in the legend.
 		                name    : "Districts",
 		                // source (STRING) - Source of the layer's data.
@@ -137,6 +139,8 @@
 		                geoName : "admin2Name"
 		            },
 					points : {
+						// display (BOOLEAN) - Choose to display the layer or not.
+						display: true,						
 						// name (STRING) - Name of the layer as it is going to be displayed in the legend.
 		                name    : "Districts",
 		                // source (STRING) - Source of the layer's data.

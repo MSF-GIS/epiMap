@@ -1,5 +1,4 @@
 function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
-	console.log('function')
 	var data3;
 	if (remote){
 		data3 = dsv.parse(epiData);
@@ -7,41 +6,45 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
 		data3 = epiData;		
 	}
  
-    // Initialise 'polygons' layer.
-    var analysisLayer = new ol.layer.Vector({
-        name: "analysisLayer",
-        source: new ol.source.Vector({}),
-        zIndex: 0
-    });	
-    
-    var formatPolygons = configFile.data.analysisLayer.geometry.format
-    if(configFile.format.indexOf(formatPolygons) === -1){
-    	window[formatPolygons] = new ol.format[formatPolygons];
-    	configFile.format.push(formatPolygons);
+    if (geoPolygons) {
+        // Initialise 'polygons' layer.
+        var analysisLayer = new ol.layer.Vector({
+            name: "analysisLayer",
+            source: new ol.source.Vector({}),
+            zIndex: 0
+        });	
+        
+        var formatPolygons = configFile.data.analysisLayer.geometry.format
+        if(configFile.format.indexOf(formatPolygons) === -1){
+            window[formatPolygons] = new ol.format[formatPolygons];
+            configFile.format.push(formatPolygons);
+        }
+        analysisLayer.getSource().addFeatures(window[formatPolygons].readFeatures(geoPolygons));
+        $.each(analysisLayer.getSource().getFeatures(), function(i, v) {
+            v.setId("aL" + i);
+        });
+        map.addLayer(analysisLayer);
     }
-    analysisLayer.getSource().addFeatures(window[formatPolygons].readFeatures(geoPolygons));
-    $.each(analysisLayer.getSource().getFeatures(), function(i, v) {
-        v.setId("aL" + i);
-    });
-    map.addLayer(analysisLayer);
 
-    // Initialise 'points' layer.
-    var analysisLayerPoints = new ol.layer.Vector({
-        name: "analysisLayerPoints",
-        source: new ol.source.Vector({}),
-        zIndex: 1
-    });	
-    
-    var formatPoints = configFile.data.analysisLayer.geometryPoints.format
-    if(configFile.format.indexOf(formatPoints) === -1){
-    	window[formatPoints] = new ol.format[formatPoints];
-    	configFile.format.push(formatPoints);
-    }    
-    analysisLayerPoints.getSource().addFeatures(window[formatPoints].readFeatures(geoPoints));
-    $.each(analysisLayerPoints.getSource().getFeatures(), function(i, v) {
-        v.setId("aLP" + i);
-    });        
-    map.addLayer(analysisLayerPoints);
+    if (geoPoints) {
+        // Initialise 'points' layer.
+        var analysisLayerPoints = new ol.layer.Vector({
+            name: "analysisLayerPoints",
+            source: new ol.source.Vector({}),
+            zIndex: 1
+        });	
+        
+        var formatPoints = configFile.data.analysisLayer.geometryPoints.format
+        if(configFile.format.indexOf(formatPoints) === -1){
+            window[formatPoints] = new ol.format[formatPoints];
+            configFile.format.push(formatPoints);
+        }    
+        analysisLayerPoints.getSource().addFeatures(window[formatPoints].readFeatures(geoPoints));
+        $.each(analysisLayerPoints.getSource().getFeatures(), function(i, v) {
+            v.setId("aLP" + i);
+        });        
+        map.addLayer(analysisLayerPoints);
+    }
 
     // Initialise crossfilter. 'cf1' used for mapping, 'cf2' used for graphs.
     var cf1 = crossfilter(data3);
@@ -54,9 +57,13 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
     var dim2Time    = cf2.dimension(function(d){return parseInt(+d[config.dimTime]);});
     var dim2Geo     = cf2.dimension(function(d){return d[config.dimGeo];});       
     var groupM      = dim2Time.group().reduceSum(function(d){return parseInt(d[config.measure]);});
-    var groupCM     = dim2Time.group().reduceSum(function(d){return parseInt(d[config.cumulative]);});        
-    var groupR      = dim2Time.group().reduceSum(function(d){return parseFloat(d[config.rate]);});
-    var groupCR     = dim2Time.group().reduceSum(function(d){return parseFloat(d[config.cumulRate]);});
+    var groupCM     = dim2Time.group().reduceSum(function(d){return parseInt(d[config.cumulative]);});
+    if (config.rate) {      
+        var groupR      = dim2Time.group().reduceSum(function(d){return parseFloat(d[config.rate]);});
+    }
+    if (config.cumulRate) {
+        var groupCR     = dim2Time.group().reduceSum(function(d){return parseFloat(d[config.cumulRate]);});
+    }
     var groupGeo    = dim2Geo.group();
     var dTimeMax    = parseInt(config.timeMax) <= dim1Time.top(1)[0][config.dimTime] ? config.timeMax : dim1Time.top(1)[0][config.dimTime];
     var dTimeMin    = parseInt(config.timeMin) >= dim1Time.bottom(1)[0][config.dimTime] ? config.timeMin : dim1Time.bottom(1)[0][config.dimTime];
@@ -88,8 +95,14 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
     configFile.initStats[locFields.measure] = findRangeOfValues(cf2.all(), locFields.measure);
     configFile.initStats[locFields.cumulative] = findRangeOfValues(cf2.all(), locFields.cumulative);     
 
-
-    var adminSource = analysisLayer;
+// TODO : Fix adminSource
+    var adminSource
+    if (geoPolygons) {
+        adminSource = analysisLayer;
+    } else {
+        adminSource = analysisLayerPoints;
+    }
+    
 
 //GLOBAL VARs
     window["appAnalysis"] = $("#selectorAnalysis").val();
@@ -146,55 +159,57 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
 
 // Define DC.js charts
     // For given geo feature : Chart for rates based on cumulative values.
-    var geoSelectedChart_Cumulative = dc.lineChart('#geoSAnchorCumulative');
-        geoSelectedChart_Cumulative
-            .width(400)
-            .height(200)
-            .ordinalColors(['orange'])
-            .margins({top: 50, right: 40, bottom: 40, left: 50})
-            .dimension(dim2Time)
-            .mouseZoomable(false)
-            .renderHorizontalGridLines(true)
-            .legend(dc.legend().x(0).y(10).itemHeight(13).gap(15))	
-            .group(groupCR, chartsLayout.cumulative.legend)
-            .title(function(d){return chartTooltipFunction(chartsLayout.cumulative.tooltip, d);})
-            .yAxisLabel(chartsLayout.cumulative.axis)
-            .xAxisLabel(configFile.layout.dimensionIndicator)
-            .brushOn(false)
-            .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
-            .elasticY(true)
-            .yAxis().ticks(5);
-            geoSelectedChart_Cumulative.on("renderlet.somename", function(chart) {
-                geoSelectedChart_Cumulative.selectAll('circle').on("click", function(d) {
-                    sliderWeek.noUiSlider.set(d.data.key);
-                });
-            });    
-
+    if (config.cumulRate) {
+        var geoSelectedChart_Cumulative = dc.lineChart('#geoSAnchorCumulative');
+            geoSelectedChart_Cumulative
+                .width(400)
+                .height(200)
+                .ordinalColors(['orange'])
+                .margins({top: 50, right: 40, bottom: 40, left: 50})
+                .dimension(dim2Time)
+                .mouseZoomable(false)
+                .renderHorizontalGridLines(true)
+                .legend(dc.legend().x(0).y(10).itemHeight(13).gap(15))	
+                .group(groupCR, chartsLayout.cumulative.legend)
+                .title(function(d){return chartTooltipFunction(chartsLayout.cumulative.tooltip, d);})
+                .yAxisLabel(chartsLayout.cumulative.axis)
+                .xAxisLabel(configFile.layout.dimensionIndicator)
+                .brushOn(false)
+                .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
+                .elasticY(true)
+                .yAxis().ticks(5);
+                geoSelectedChart_Cumulative.on("renderlet.somename", function(chart) {
+                    geoSelectedChart_Cumulative.selectAll('circle').on("click", function(d) {
+                        sliderWeek.noUiSlider.set(d.data.key);
+                    });
+                });    
+    }
     // For given geo feature : Chart for rates based on values (non-cumulative).
-    var geoSelectedChart_Measure = dc.lineChart('#geoSAnchorMeasure');
-        geoSelectedChart_Measure
-            .width(400)
-            .height(200)
-            .ordinalColors(['green'])
-            .margins({top: 50, right: 40, bottom: 40, left: 50})
-            .dimension(dim2Time)
-            .mouseZoomable(false)
-            .renderHorizontalGridLines(true)
-            .legend(dc.legend().x(0).y(10).itemHeight(13).gap(15))				
-            .group(groupR, chartsLayout.measure.legend)
-            .title(function(d){return chartTooltipFunction(chartsLayout.measure.tooltip, d);})				
-            .yAxisLabel(chartsLayout.measure.axis)
-            .xAxisLabel(configFile.layout.dimensionIndicator)
-            .brushOn(false)
-            .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
-            .elasticY(true)
-            .yAxis().ticks(5);
-            geoSelectedChart_Measure.on("renderlet.somename", function(chart) {
-                geoSelectedChart_Measure.selectAll('circle').on("click", function(d) {
-                    sliderWeek.noUiSlider.set(d.data.key);
+    if (config.rate) {
+        var geoSelectedChart_Measure = dc.lineChart('#geoSAnchorMeasure');
+            geoSelectedChart_Measure
+                .width(400)
+                .height(200)
+                .ordinalColors(['green'])
+                .margins({top: 50, right: 40, bottom: 40, left: 50})
+                .dimension(dim2Time)
+                .mouseZoomable(false)
+                .renderHorizontalGridLines(true)
+                .legend(dc.legend().x(0).y(10).itemHeight(13).gap(15))				
+                .group(groupR, chartsLayout.measure.legend)
+                .title(function(d){return chartTooltipFunction(chartsLayout.measure.tooltip, d);})				
+                .yAxisLabel(chartsLayout.measure.axis)
+                .xAxisLabel(configFile.layout.dimensionIndicator)
+                .brushOn(false)
+                .x(d3.scale.linear().domain([parseInt(dTimeMin), parseInt(dTimeMax) + 1]))
+                .elasticY(true)
+                .yAxis().ticks(5);
+                geoSelectedChart_Measure.on("renderlet.somename", function(chart) {
+                    geoSelectedChart_Measure.selectAll('circle').on("click", function(d) {
+                        sliderWeek.noUiSlider.set(d.data.key);
+                    });
                 });
-            });
-
+    }
     // For given geo feature : Chart for absolutes values (cumulative and non-cumulative).
     var geoSelectedChart_Combined = dc.compositeChart("#geoSAnchorCombined");
         geoSelectedChart_Combined
@@ -281,59 +296,66 @@ function runEpiMap(epiData, dsv, geoPoints, geoPolygons, remote){
 // 
 function displayAnalysis(analysis){
     clickArea.getFeatures().clear();        
-//console.log(configFile.analysisFunctions.cacheObj)
     popup.setPosition(undefined);
-    $.each(analysisLayer.getSource().getFeatures(), function(i, v) {
-        var value = function(){
-            dim1Geo.filter(null);
-            dim1Geo.filter(v.get(geometryFile.geoCode));
-            var val1;
-            if(dim1Geo.top(Infinity).length !== 0){						
-                val1 = parseFloat(dim1Geo.top(Infinity)[0][analysisField]);							
-            } else {
-                val1 = 0;
-            }
-            return val1;
-        };
-        v.set(analysisField, value());
-        v.set("layerType", "polygons");
-    });
-
-    $.each(analysisLayerPoints.getSource().getFeatures(), function(i, v) {
-        var value = function(){
-            dim1Geo.filter(null);
-            dim1Geo.filter(v.get(geometryFile.geoCode));
-            var val1;
-            if(dim1Geo.top(Infinity).length !== 0){						
-                val1 = parseFloat(dim1Geo.top(Infinity)[0][analysisAbsoluteField]);							
-            } else {
-                val1 = 0;
-            }               
-            return val1;
-        };
-        v.set(analysisAbsoluteField, value());
-        v.set("layerType", "points");
-    });
-    
+    if (geoPolygons) {
+        $.each(analysisLayer.getSource().getFeatures(), function(i, v) {
+            var value = function(){
+                dim1Geo.filter(null);
+                dim1Geo.filter(v.get(geometryFile.geoCode));
+                var val1;
+                if(dim1Geo.top(Infinity).length !== 0){						
+                    val1 = parseFloat(dim1Geo.top(Infinity)[0][analysisField]);							
+                } else {
+                    val1 = 0;
+                }
+                return val1;
+            };
+            v.set(analysisField, value());
+            v.set("layerType", "polygons");
+        });
+    }
+    if (geoPoints) {
+        $.each(analysisLayerPoints.getSource().getFeatures(), function(i, v) {
+            var value = function(){
+                dim1Geo.filter(null);
+                dim1Geo.filter(v.get(geometryFile.geoCode));
+                var val1;
+                if(dim1Geo.top(Infinity).length !== 0){						
+                    val1 = parseFloat(dim1Geo.top(Infinity)[0][analysisAbsoluteField]);							
+                } else {
+                    val1 = 0;
+                }               
+                return val1;
+            };
+            v.set(analysisAbsoluteField, value());
+            v.set("layerType", "points");
+        });
+    }
     if ($('#selectorAnalysis')[0].dataset.param !== configFile.paramObject.paramString.legend) {
-        $('#legendContent').html(configFile.analysisFunctions.drawLegendRates(analysisType));
-        $('#legendContent').append(configFile.analysisFunctions.drawLegendCases(analysisType));
+        if (geoPolygons) {
+            $('#legendContent').html(configFile.analysisFunctions.drawLegendRates(analysisType));
+        }
+        if (geoPoints) {
+            $('#legendContent').append(configFile.analysisFunctions.drawLegendCases(analysisType));
+        }
         $('#legendContent').append(configFile.analysisFunctions.drawLegendOthers());
         $('#selectorAnalysis')[0].dataset.param = configFile.paramObject.paramString.legend;
     }
 
-    
-    analysisLayer.setStyle(function(feature){
-        var val = feature.get(analysisField);
-        var layerType = feature.get("layerType");
-        return configFile.analysisFunctions.runAnalysis(val, layerType, analysisType);
-    });
-    
-    analysisLayerPoints.setStyle(function(feature){
-        var val = feature.get(analysisAbsoluteField);
-        var layerType = feature.get("layerType");
-        return configFile.analysisFunctions.runAnalysis(val, layerType, analysisType);     
-    });
+    if (geoPolygons) {
+        analysisLayer.setStyle(function(feature){
+            var val = feature.get(analysisField);
+            var layerType = feature.get("layerType");
+            return configFile.analysisFunctions.runAnalysis(val, layerType, analysisType);
+        });
+    }
+    if (geoPoints) {
+        analysisLayerPoints.setStyle(function(feature){
+            var val = feature.get(analysisAbsoluteField);
+            var layerType = feature.get("layerType");
+            return configFile.analysisFunctions.runAnalysis(val, layerType, analysisType);     
+        });
+    }
 }
 
 
@@ -342,9 +364,11 @@ function displayAnalysis(analysis){
 /////////////	MAP INTERACTION - start
 
     window["yemcholera_clickFlag"] = false;
-
+    var layersInteraction = []
+    if (geoPolygons) {layersInteraction.push(analysisLayer)}
+    if (geoPoints) {layersInteraction.push(analysisLayerPoints)}
     var clickArea = new ol.interaction.Select({
-        layers: [analysisLayerPoints,analysisLayer],
+        layers: layersInteraction,
         multi: false,
         style: function(feature){
             if (testGeo.indexOf(feature.get(configFile.data.analysisLayer.geometry.geoCode)) !== -1) {
@@ -527,20 +551,26 @@ map.addOverlay(popup);
                 }
             }
             var an = $('#selectorAnalysis').val();
-            var analysisField = configFile.analysisFunctions.matchAbbAnalysis[an]["fieldRate"];             
+            var analysisField = configFile.analysisFunctions.matchAbbAnalysis[an]["fieldRate"];
+            if (!analysisField) {
+                analysisField = configFile.analysisFunctions.matchAbbAnalysis[an]["fieldAbsolute"];
+            }       
             if($("#selectorAdmin").val() !== "default"){
                 function filterAdm(a){
                     var Adm = $("#selectorAdmin").val();
                     return a.get(geoFields.geoCode) === Adm;
                 }
-                var e = analysisLayer.getSource().getFeatures().filter(filterAdm);
+                var e = adminSource.getSource().getFeatures().filter(filterAdm);
                 if (test === true) {
                     clickArea.getFeatures().push(e[0]);                        
-                }             
+                }       
                 if (yemcholera_clickFlag === false) {
                     
                     var loc_selected = e[0].get(geoFields.geoName);
                     var val_selected = e[0].get(analysisField);
+                    if (!val_selected) {
+                        val_selected = e[0].get(analysisAbsoluteField);
+                    }
                     var text = an + " : " + val_selected;
                     content_popup.innerHTML = '<div><b>' + loc_selected + '</b><br>' + text + '</div>';
                     var zoom = map.getView().getZoom();
@@ -559,12 +589,20 @@ map.addOverlay(popup);
                 dim2Geo.filter(e[0].get(geoFields.geoCode));
                 
                 $("#weeklyChartTitle").html('<strong>' + e[0].get(geoFields.geoName) + ' - ' + chartsLayout.combined.title + '</strong>');
-                $("#weeklyChartTitle_AR").html('<strong>' + e[0].get(geoFields.geoName) + ' - ' + chartsLayout.cumulative.title + '</strong>');
-                $("#weeklyChartTitle_WIR").html('<strong>' + e[0].get(geoFields.geoName) + ' - ' + chartsLayout.measure.title + '</strong>');
+                if (config.cumulRate) {
+                    $("#weeklyChartTitle_AR").html('<strong>' + e[0].get(geoFields.geoName) + ' - ' + chartsLayout.cumulative.title + '</strong>');
+                }
+                if (config.rate) {
+                    $("#weeklyChartTitle_WIR").html('<strong>' + e[0].get(geoFields.geoName) + ' - ' + chartsLayout.measure.title + '</strong>');
+                }
 
                 geoSelectedChart_Combined.redraw();
-                geoSelectedChart_Cumulative.redraw();
-                geoSelectedChart_Measure.redraw();
+                if (config.cumulRate) {
+                    geoSelectedChart_Cumulative.redraw();
+                }
+                if (config.rate) {
+                    geoSelectedChart_Measure.redraw();
+                }
                 $("#adminRow").show(500);
 
             } else {
