@@ -92,7 +92,7 @@ This map has been exported from MSF Map Centre on personal initiative. MSF GIS U
                 var yStartRef = 31;
 
                 // Legend 1 (rates)
-                if (config.rates && config.cumulRates) {                  
+                if (config.rate && config.cumulRate) {                  
                     doc.setFontSize(9).setFontStyle('italic').setTextColor(0,0,0);
                     var forLegendDesc = $("#selectorAnalysis").val() === configFile.analysisFunctions.types.rates.analysis_1.config.abbreviation ? configFile.analysisFunctions.types.rates.analysis_1.config.printName : configFile.analysisFunctions.types.rates.analysis_2.config.printName;
                     doc.text(245, 30, forLegendDesc);
